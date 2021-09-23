@@ -1,0 +1,31 @@
+<!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+  -->
+
+{% if author.impactstory %}
+<li>
+  <a href="https://impactstory.org/u/{{ author.impactstory }}">
+    <i class="ai ai-impactstory" aria-hidden="true"></i> Impactstory
+  </a>
+</li>
+{% endif %}
+
+{% if author.googlescholar %}
+<li>
+  <a target="_blank" rel="noopener noreferrer" href="https://scholar.google.com/citations?user={{ author.googlescholar }}">
+    <i class="ai ai-google-scholar fa-fw" aria-hidden="true"></i> Google Scholar
+  </a>
+</li>
+{% endif %}
+
+{% if author.orcid %}
+<li>
+  <a target="_blank" rel="noopener noreferrer" href="https://orcid.org/{{ author.orcid }}">
+    <i class="ai ai-orcid fa-fw" aria-hidden="true"></i> ORCiD
+  </a>
+</li>
+{% endif %}

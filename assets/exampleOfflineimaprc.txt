@@ -1,0 +1,32 @@
+[general]
+accounts = myaccount
+maxsyncaccounts = 1
+ui = basic
+
+metadata = ~/.offlineimap
+
+socktimeout=30
+
+[Account myaccount]
+localrepository = gmailLocal
+remoterepository = gmailRemote
+
+[Repository gmailLocal]
+type = Maildir
+localfolders = ~/.maildir
+sep = .
+
+[Repository gmailRemote]
+type = Gmail
+remoteuser = @gmail.com
+remotepass = 
+realdelete = no
+
+# This translates folder names such that everything (including your Inbox)
+# appears in the same folder (named root).
+nametrans = lambda folder: re.sub('\s+', '', re.sub('(.+)(\\.)(.+)', '\\1_\\3', re.sub('(^.{1})', '.\\1', re.sub('.*Trash$', 'Trash', re.sub('.*Drafts$', 'Drafts', re.sub('.*Sent Mail$', 'Sent', re.sub('.*Starred$', 'Starred', re.sub('.*All Mail$', 'Archive', re.sub('^(INBOX)', ' ', folder)))))))))
+
+# This excludes some folders from being synced. You will almost
+# certainly want to exclude 'All Mail', 'Trash', and 'Starred', at
+# least. Note that offlineimap does NOT honor subscription details.
+folderfilter = lambda foldername: foldername not in ['[Gmail]/Spam', '[Gmail]/Important', '[Gmail]/All Mail'] 

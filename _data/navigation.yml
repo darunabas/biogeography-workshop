@@ -1,0 +1,16 @@
+# main links links
+main:
+  - title: "Our Team"
+    url: /team/
+
+  - title: "Schedule"
+    url: /schedule/
+
+  - title: "Course Content"
+    url: /blog/
+
+  - title: "Conduct"
+    url: /conduct/
+
+  - title: "Resources"
+    url: /resources/

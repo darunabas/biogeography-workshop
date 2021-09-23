@@ -1,0 +1,664 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Lesson 5 - Open science and reproducible research - Biogeography and Macroecology 2022</title>
+<meta name="description" content="">
+
+
+  <meta name="author" content="Barnabas Daru">
+  
+  <meta property="article:author" content="Barnabas Daru">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Biogeography and Macroecology 2022">
+<meta property="og:title" content="Lesson 5 - Open science and reproducible research">
+<meta property="og:url" content="http://localhost:4000/blog/phylogenetic-diversity-large-datasetes/">
+
+
+
+
+  <meta property="og:image" content="http://localhost:4000/assets/images/figurepd.png">
+
+
+
+  <meta name="twitter:site" content="@Barnabas_Daru">
+  <meta name="twitter:title" content="Lesson 5 - Open science and reproducible research">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:url" content="http://localhost:4000/blog/phylogenetic-diversity-large-datasetes/">
+
+  
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="http://localhost:4000/assets/images/figurepd.png">
+  
+
+  
+    <meta name="twitter:creator" content="@https://twitter.com/Barnabas_Daru">
+  
+
+
+
+  <meta property="article:published_time" content="2019-10-16T14:34:30-05:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/blog/phylogenetic-diversity-large-datasetes/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": null,
+      "url": "http://localhost:4000/",
+      "sameAs": ["https://github.com/darunabas","https://twitter.com/Barnabas_Daru"]
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Biogeography and Macroecology 2022 Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--posts wide">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Biogeography and Macroecology 2022
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/team/">Our Team</a>
+            </li><li class="masthead__menu-item">
+              <a href="/schedule/">Schedule</a>
+            </li><li class="masthead__menu-item">
+              <a href="/blog/">Course Content</a>
+            </li><li class="masthead__menu-item">
+              <a href="/conduct/">Conduct</a>
+            </li><li class="masthead__menu-item">
+              <a href="/resources/">Resources</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+  
+
+
+
+
+
+
+
+<div class="page__hero--overlay"
+  style=" background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/assets/images/figurepd.png');"
+>
+  
+    <div class="wrapper">
+      <h1 id="page-title" class="page__title" itemprop="headline">
+        
+          Lesson 5 - Open science and reproducible research
+
+        
+      </h1>
+      
+        <p class="page__lead">
+</p>
+      
+      
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+      
+      
+    </div>
+  
+  
+</div>
+
+
+
+
+
+<div id="main" role="main">
+  
+
+
+  <div class="archive">
+    
+    <!-- Look the author details up from the site config. -->
+
+
+<!-- Output author details if some exist. -->
+
+    <span>
+        <!-- Personal Info. -->
+        By <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/Barnabas_Daru">Barnabas Daru </a> | October 16, 2019
+    </span>
+
+
+<h2 id="1-introduction">1. Introduction</h2>
+
+<p>Phylogenetic diversity is the sum of branch lengths connecting species into the root of a phylogenetic tree. We will demonstrate the ability of our new R package <code class="language-plaintext highlighter-rouge">phyloregion</code> to handle and execute large biogeographical datasets for analysis of phylogenetic diversity for 4888 plant species in just five steps!.</p>
+
+<h2 id="2-input-data">2. Input data</h2>
+
+<p>Species distributions data are commonly available in three formats: polygons, points records and raster layers. We will tap into the Botanical Information and Ecology Network database to download polygons range maps and phylogeny for 4888 plant species using the R package <code class="language-plaintext highlighter-rouge">BIEN</code> as follows:</p>
+
+<p>First, load the packages for the analysis:</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">library</span><span class="p">(</span><span class="n">phyloregion</span><span class="p">)</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="n">BIEN</span><span class="p">)</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="n">ape</span><span class="p">)</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="n">raster</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">s</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">BIEN_ranges_genus</span><span class="p">(</span><span class="s2">"Pinus"</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+<p>Because downloading large number of species using the <code class="language-plaintext highlighter-rouge">BIEN</code> R package can take a long time, we previously downloaded the shapefiles and saved to file:</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">wd</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">getwd</span><span class="p">()</span><span class="w">
+</span><span class="n">dir</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">tempdir</span><span class="p">()</span><span class="w">
+</span><span class="n">setwd</span><span class="p">(</span><span class="n">dir</span><span class="p">)</span><span class="w">
+</span><span class="n">download.file</span><span class="p">(</span><span class="w">
+    </span><span class="n">url</span><span class="o">=</span><span class="s2">"https://barnabasdaru.files.wordpress.com/2020/10/bien_data.zip"</span><span class="p">,</span><span class="w">
+    </span><span class="n">destfile</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"bien_data.zip"</span><span class="p">)</span><span class="w">
+</span><span class="n">unzip</span><span class="p">(</span><span class="n">zipfile</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"bien_data.zip"</span><span class="p">)</span><span class="w">
+</span><span class="n">setwd</span><span class="p">(</span><span class="n">dir</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"bien_data"</span><span class="p">)</span><span class="w">
+</span><span class="n">list.files</span><span class="p">()</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## [1] "americas"      "bien_polygons"
+</code></pre></div></div>
+
+<h3 id="read-in-the-phylogeny">Read in the phylogeny</h3>
+
+<p>We will download the complete BIEN phylogenies for 81,274 plant species.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">tree</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">BIEN_phylogeny_complete</span><span class="p">(</span><span class="m">1</span><span class="p">)</span><span class="w">
+</span><span class="n">tree</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>## 
+## Phylogenetic tree with 81274 tips and 81273 internal nodes.
+## 
+## Tip labels:
+## 	Haplomitrium_blumei, Apotreubia_nana, Marchantia_polymorpha, Marchantia_aquatica, Marchantia_domingensis, Marchantia_alpestris, ...
+## 
+## Rooted; includes branch lengths.
+</code></pre></div></div>
+<h3 id="read-in-species-polygon-maps">Read in species polygon maps</h3>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">m</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">shapefile</span><span class="p">(</span><span class="s2">"bien_polygons/bien_plants.shp"</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># and base map of the Americas for plotting</span><span class="w">
+</span><span class="n">b</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">shapefile</span><span class="p">(</span><span class="s2">"americas/americas.shp"</span><span class="p">)</span><span class="w">
+</span><span class="n">setwd</span><span class="p">(</span><span class="n">wd</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+<h2 id="3-community-matrix">3. Community matrix</h2>
+<p>Next, we convert the polygon range maps to community matrix using the function <code class="language-plaintext highlighter-rouge">polys2comm</code> at a grid resolution of 1 degree, but other grain sizes can be specified using the <code class="language-plaintext highlighter-rouge">res</code> argument – remember, patterns of biodiversity are scale dependent.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">p</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">polys2comm</span><span class="p">(</span><span class="n">m</span><span class="p">,</span><span class="w"> </span><span class="n">res</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="n">species</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Species"</span><span class="p">,</span><span class="w"> </span><span class="n">trace</span><span class="o">=</span><span class="m">0</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># This gives 2 objects: `comm_dat` the (sparse) community matrix and `poly_shp`, shapefile of grid cells with cell values, i.e. species richness per cell.</span><span class="w">
+
+</span><span class="n">comm</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">p</span><span class="o">$</span><span class="n">comm_dat</span><span class="w">
+</span><span class="n">shp</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">p</span><span class="o">$</span><span class="n">poly_shp</span><span class="w">
+</span></code></pre></div></div>
+
+<h2 id="4-species-richness">4. Species richness</h2>
+
+<p>We can use the function <code class="language-plaintext highlighter-rouge">plot_swatch</code> to map cell values using nice continuous color gradients as follows:</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">plot_swatch</span><span class="p">(</span><span class="n">shp</span><span class="p">,</span><span class="w"> </span><span class="n">shp</span><span class="o">$</span><span class="n">richness</span><span class="p">,</span><span class="w"> </span><span class="n">k</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">30</span><span class="p">,</span><span class="w"> </span><span class="n">border</span><span class="o">=</span><span class="kc">NA</span><span class="p">,</span><span class="w"> </span><span class="n">breaks</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"jenks"</span><span class="p">,</span><span class="w">
+            </span><span class="n">col</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">hcl.colors</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="m">30</span><span class="p">,</span><span class="w"> </span><span class="n">palette</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"RdYlGn"</span><span class="p">,</span><span class="w"> </span><span class="n">rev</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">))</span><span class="w">
+</span><span class="n">plot</span><span class="p">(</span><span class="n">b</span><span class="p">,</span><span class="w"> </span><span class="n">add</span><span class="o">=</span><span class="kc">TRUE</span><span class="p">,</span><span class="w"> </span><span class="n">lwd</span><span class="o">=</span><span class="m">.5</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<p><img src="https://barnabasdaru.files.wordpress.com/2020/10/pd-richness-1.png" alt="plot of richness" /></p>
+
+<h2 id="5-phylogenetic-diversity">5. Phylogenetic diversity</h2>
+
+<p>Computing phylogenetic diversity is very straightforward using the function <code class="language-plaintext highlighter-rouge">PD</code> and visualized using <code class="language-plaintext highlighter-rouge">plot_swatch</code> as follows:</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># First, match phylogeny to community matrix:</span><span class="w">
+</span><span class="n">submat</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">match_phylo_comm</span><span class="p">(</span><span class="n">tree</span><span class="p">,</span><span class="w"> </span><span class="n">comm</span><span class="p">)</span><span class="o">$</span><span class="n">comm</span><span class="w">
+</span><span class="n">subphy</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">match_phylo_comm</span><span class="p">(</span><span class="n">tree</span><span class="p">,</span><span class="w"> </span><span class="n">comm</span><span class="p">)</span><span class="o">$</span><span class="n">phy</span><span class="w">
+
+</span><span class="n">mypd</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">PD</span><span class="p">(</span><span class="n">submat</span><span class="p">,</span><span class="w"> </span><span class="n">subphy</span><span class="p">)</span><span class="w">
+</span><span class="n">head</span><span class="p">(</span><span class="n">mypd</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##      v100    v10067    v10068    v10072    v10099      v101 
+##  730.1314 1657.3708 1657.3708 1530.7859 2173.5121  730.1314
+</code></pre></div></div>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">y</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">merge</span><span class="p">(</span><span class="n">shp</span><span class="p">,</span><span class="w"> </span><span class="n">data.frame</span><span class="p">(</span><span class="n">grids</span><span class="o">=</span><span class="nf">names</span><span class="p">(</span><span class="n">mypd</span><span class="p">),</span><span class="w"> </span><span class="n">pd</span><span class="o">=</span><span class="n">mypd</span><span class="p">),</span><span class="w"> </span><span class="n">by</span><span class="o">=</span><span class="s2">"grids"</span><span class="p">)</span><span class="w">
+</span><span class="n">y</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">y</span><span class="p">[</span><span class="o">!</span><span class="nf">is.na</span><span class="p">(</span><span class="n">y</span><span class="o">@</span><span class="n">data</span><span class="o">$</span><span class="n">pd</span><span class="p">),]</span><span class="w">
+</span><span class="n">head</span><span class="p">(</span><span class="n">y</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##      grids       lon      lat richness       pd
+## 4716   v98 -81.62558 82.80651        1 730.1314
+## 4730   v99 -80.62558 82.80651        1 730.1314
+## 1     v100 -79.62558 82.80651        1 730.1314
+## 6     v101 -78.62558 82.80651        1 730.1314
+## 78    v102 -77.62558 82.80651        1 730.1314
+## 79    v103 -76.62558 82.80651        1 730.1314
+</code></pre></div></div>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">plot_swatch</span><span class="p">(</span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="n">values</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">y</span><span class="o">$</span><span class="n">pd</span><span class="p">,</span><span class="w"> </span><span class="n">k</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">30</span><span class="p">,</span><span class="w"> </span><span class="n">border</span><span class="o">=</span><span class="kc">NA</span><span class="p">,</span><span class="w"> </span><span class="n">breaks</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"jenks"</span><span class="p">,</span><span class="w">
+            </span><span class="n">col</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">hcl.colors</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="m">30</span><span class="p">,</span><span class="w"> </span><span class="n">palette</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"RdYlGn"</span><span class="p">,</span><span class="w"> </span><span class="n">rev</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">))</span><span class="w">
+</span><span class="n">plot</span><span class="p">(</span><span class="n">b</span><span class="p">,</span><span class="w"> </span><span class="n">add</span><span class="o">=</span><span class="kc">TRUE</span><span class="p">,</span><span class="w"> </span><span class="n">lwd</span><span class="o">=</span><span class="m">.5</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<p><img src="https://barnabasdaru.files.wordpress.com/2020/10/pd-pd-1.png" alt="plot of PD" /></p>
+
+<p>View the correlation between Phylogenetic Diversity and Species Richness:</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">plot</span><span class="p">(</span><span class="n">y</span><span class="o">$</span><span class="n">richness</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="o">$</span><span class="n">pd</span><span class="p">,</span><span class="w"> </span><span class="n">pch</span><span class="o">=</span><span class="m">21</span><span class="p">,</span><span class="w"> </span><span class="n">bg</span><span class="o">=</span><span class="s2">"black"</span><span class="p">,</span><span class="w"> </span><span class="n">col</span><span class="o">=</span><span class="s2">"white"</span><span class="p">,</span><span class="w">
+     </span><span class="n">lwd</span><span class="o">=</span><span class="m">0.31</span><span class="p">,</span><span class="w"> </span><span class="n">cex</span><span class="o">=</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="n">ylab</span><span class="o">=</span><span class="s2">"Phylogenetic Diversity"</span><span class="p">,</span><span class="w">
+     </span><span class="n">xlab</span><span class="o">=</span><span class="s2">"Species Richness"</span><span class="p">,</span><span class="w"> </span><span class="n">las</span><span class="o">=</span><span class="m">1</span><span class="p">)</span><span class="w">
+</span><span class="n">abline</span><span class="p">(</span><span class="n">lm</span><span class="p">(</span><span class="n">y</span><span class="o">$</span><span class="n">pd</span><span class="o">~</span><span class="n">y</span><span class="o">$</span><span class="n">richness</span><span class="p">),</span><span class="w"> </span><span class="n">col</span><span class="o">=</span><span class="s2">"red"</span><span class="p">,</span><span class="w"> </span><span class="n">lwd</span><span class="o">=</span><span class="m">2</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<p><img src="https://barnabasdaru.files.wordpress.com/2020/10/pd-correlation-1.png" alt="plot of correlation" /></p>
+
+<p>If you find this vignette tutorial useful, please cite in publications as:</p>
+
+<p>Daru, B.H., Karunarathne, P. &amp; Schliep, K. (2020) phyloregion: R package for biogeographic regionalization and macroecology. <strong><em>Methods in Ecology and Evolution</em></strong> 11: 1483-1491 <a href="https://doi.org/10.1111/2041-210X.13478">doi: 10.1111/2041-210X.13478</a>.</p>
+
+<h2 id="references">REFERENCES</h2>
+
+
+<ul class="taxonomy__index">
+  
+  
+    <li>
+      <a href="#2021">
+        <strong>2021</strong> <span class="taxonomy__count">2</span>
+      </a>
+    </li>
+  
+    <li>
+      <a href="#2020">
+        <strong>2020</strong> <span class="taxonomy__count">2</span>
+      </a>
+    </li>
+  
+    <li>
+      <a href="#2019">
+        <strong>2019</strong> <span class="taxonomy__count">1</span>
+      </a>
+    </li>
+  
+</ul>
+
+
+
+
+  <section id="2021" class="taxonomy__section">
+    <h2 class="archive__subtitle">2021</h2>
+    <div class="entries-list">
+      
+        
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/updates/Postdoctoral-Position-Biogeography/" rel="permalink">Lesson 1 - R Basics and Good R practices
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+</p>
+  </article>
+</div>
+
+      
+        
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/updates/PhD-students-biogeography/" rel="permalink">Lesson 2 - R functions and debugging
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+</p>
+  </article>
+</div>
+
+      
+    </div>
+    <a href="#page-title" class="back-to-top">Back to Top &uarr;</a>
+  </section>
+
+  <section id="2020" class="taxonomy__section">
+    <h2 class="archive__subtitle">2020</h2>
+    <div class="entries-list">
+      
+        
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/blog/jordan-winner-of-gers-undergraduate-award/" rel="permalink">Lesson 3 - R Markdown and GitHub
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+</p>
+  </article>
+</div>
+
+      
+        
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/updates/Endemism-Scale-Dependent/" rel="permalink">Lesson 4 - Data types (points, polygons, rasters, phylogenies)
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          5 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+</p>
+  </article>
+</div>
+
+      
+    </div>
+    <a href="#page-title" class="back-to-top">Back to Top &uarr;</a>
+  </section>
+
+  <section id="2019" class="taxonomy__section">
+    <h2 class="archive__subtitle">2019</h2>
+    <div class="entries-list">
+      
+        
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/blog/phylogenetic-diversity-large-datasetes/" rel="permalink">Lesson 5 - Open science and reproducible research
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+</p>
+  </article>
+</div>
+
+      
+    </div>
+    <a href="#page-title" class="back-to-top">Back to Top &uarr;</a>
+  </section>
+
+
+  </div>
+</div>
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+    
+      <li><a target="_blank" rel="noopener noreferrer" href="https://twitter.com/Barnabas_Daru"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+    
+    
+    
+    
+    
+    <li><a target="_blank" rel="noopener noreferrer" href="http://localhost:4000/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">
+  &copy; 2021 Biogeography and Macroecology 2022. <br>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

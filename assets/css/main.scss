@@ -1,0 +1,72 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+$doc-font-size              : 16;
+
+
+/* =========================================================================
+   Colors
+   ========================================================================== */
+
+$gray                       : #7a8288;
+$dark-gray                  : mix(#000, $gray, 40%);
+$darker-gray                : mix(#000, $gray, 60%);
+$light-gray                 : mix(#fff, $gray, 50%);
+$lighter-gray               : mix(#fff, $gray, 90%);
+
+$body-color                 : #000; //#fff;
+$background-color           : #222; //#fff;
+$code-background-color      : $darker-gray;
+$code-background-color-dark : $dark-gray;
+$text-color                 : $light-gray;
+$border-color               : $dark-gray;
+
+$primary-color              : #999; //#7a8288;
+$success-color              : #62c462;
+$warning-color              : #f89406;
+$danger-color               : #ee5f5b;
+$info-color                 : #3F98DB; //#52adc8;
+
+$footer-background-color    : #000;
+$muted-text-color           : $gray;
+
+$link-color: #03a9f4;
+
+/* brand colors is same as text */
+
+$behance-color: $text-color; /*#1769ff !default;*/
+$bitbucket-color:  $text-color; /*#205081 !default;*/
+$dribbble-color:  $text-color; /*#ea4c89 !default;*/
+$facebook-color:  $text-color; /*#3b5998 !default;*/
+$flickr-color:  $text-color; /*#ff0084 !default;*/
+$foursquare-color:  $text-color; /*#0072b1 !default;*/
+$github-color:  $text-color; /*#171516 !default;*/
+$google-plus-color:  $text-color; /*#dd4b39 !default;*/
+$instagram-color:  $text-color; /*#517fa4 !default;*/
+$lastfm-color:  $text-color; /*#d51007 !default;*/
+$linkedin-color:  $text-color; /*#007bb6 !default;*/
+$pinterest-color:  $text-color; /*#cb2027 !default;*/
+$rss-color:  $text-color; /*#fa9b39 !default;*/
+$soundcloud-color:  $text-color; /*#ff3300 !default;*/
+$stackoverflow-color:  $text-color; /*#fe7a15 !default;*/
+$tumblr-color:  $text-color; /*#32506d !default;*/
+$twitter-color:  $text-color; /*#55acee !default;*/
+$vimeo-color:  $text-color; /*#1ab7ea !default;*/
+$vine-color:  $text-color; /*#00bf8f !default;*/
+$youtube-color:  $text-color; /*#bb0000 !default;*/
+$xing-color:  $text-color; /*#006567 !default;*/
+
+
+a {
+    text-decoration: none;
+}
+
+.page__footer {
+    border-top: solid $gray 2px;
+}
+
+@charset "utf-8";
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials

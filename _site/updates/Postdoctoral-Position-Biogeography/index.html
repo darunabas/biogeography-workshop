@@ -1,0 +1,563 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Lesson 1 - R Basics and Good R practices - Biogeography and Macroecology 2022</title>
+<meta name="description" content="">
+
+
+  <meta name="author" content="Barnabas Daru">
+  
+  <meta property="article:author" content="Barnabas Daru">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Biogeography and Macroecology 2022">
+<meta property="og:title" content="Lesson 1 - R Basics and Good R practices">
+<meta property="og:url" content="http://localhost:4000/updates/Postdoctoral-Position-Biogeography/">
+
+
+
+
+  <meta property="og:image" content="http://localhost:4000/assets/images/TAMUCC.png">
+
+
+
+  <meta name="twitter:site" content="@Barnabas_Daru">
+  <meta name="twitter:title" content="Lesson 1 - R Basics and Good R practices">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:url" content="http://localhost:4000/updates/Postdoctoral-Position-Biogeography/">
+
+  
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="http://localhost:4000/assets/images/TAMUCC.png">
+  
+
+  
+    <meta name="twitter:creator" content="@https://twitter.com/Barnabas_Daru">
+  
+
+
+
+  <meta property="article:published_time" content="2021-07-13T00:00:00-05:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/updates/Postdoctoral-Position-Biogeography/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": null,
+      "url": "http://localhost:4000/",
+      "sameAs": ["https://github.com/darunabas","https://twitter.com/Barnabas_Daru"]
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Biogeography and Macroecology 2022 Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--posts wide">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Biogeography and Macroecology 2022
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/team/">Our Team</a>
+            </li><li class="masthead__menu-item">
+              <a href="/schedule/">Schedule</a>
+            </li><li class="masthead__menu-item">
+              <a href="/blog/">Course Content</a>
+            </li><li class="masthead__menu-item">
+              <a href="/conduct/">Conduct</a>
+            </li><li class="masthead__menu-item">
+              <a href="/resources/">Resources</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+  
+
+
+
+
+
+
+
+<div class="page__hero--overlay"
+  style=" background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/assets/images/TAMUCC.png');"
+>
+  
+    <div class="wrapper">
+      <h1 id="page-title" class="page__title" itemprop="headline">
+        
+          Lesson 1 - R Basics and Good R practices
+
+        
+      </h1>
+      
+        <p class="page__lead">
+</p>
+      
+      
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 minute read
+        
+      </span>
+    
+  </p>
+
+
+      
+      
+    </div>
+  
+  
+</div>
+
+
+
+
+
+<div id="main" role="main">
+  
+
+
+  <div class="archive">
+    
+    <!-- Look the author details up from the site config. -->
+
+
+<!-- Output author details if some exist. -->
+
+    <span>
+        <!-- Personal Info. -->
+        By <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/Barnabas_Daru">Barnabas Daru </a> | July 13, 2021
+    </span>
+
+
+<h2 id="postdoctoral-position-in-biogeographic-inference-tools-3-years">Postdoctoral Position in Biogeographic Inference Tools (3 years)</h2>
+
+<p>A 3-year postdoctoral position in developing analytical methods and tools for evolutionary biogeography and macroecology is available in the lab of Barnabas Daru <a href="https://barnabasdaru.com/">(https://barnabasdaru.com/)</a> in the Department of Life Sciences at Texas A&amp;M University-Corpus Christi. This position is part of a collaborative, 3-year NSF funded DBI project title <em>phyloregion, computational infrastructure for biogeographic regionalization and macroecology in the R computing environment</em>. The position is 100% research.</p>
+
+<!--more-->
+
+<p>The responsibilities are to: (1) Develop new methods for biome evolution; (2) Develop new tools to visualize patterns of biogeography, macroecology and evolution; and (3) Develop new tools for conservation that reflect the key dimensions of phylogenetic diversity including richness, divergence and regularity <a href="https://doi.org/10.5281/zenodo.4792835" target="_blank">(https://doi.org/10.5281/zenodo.4792835)</a>.</p>
+
+<p>The Daru Lab is supportive of opportunities for professional development (e.g., conferences).
+The postdoc will also have the opportunity to participate in a biogeography-method users workshop in Laguna Madre Field Station in the Gulf of Mexico in south Texas in Years 1 and 3 of the project and Turtle Cove Field Station, Louisiana in Year 2. We strive to provide a flexible, comfortable, inclusive environment for research and professional growth.</p>
+
+<p><strong>Essential qualifications:</strong><br />
+Applicants should have a PhD in ecology, biology, evolution, biogeography, statistics or a related field, and have demonstrated expertise in spatial analysis and programming in the <code class="language-plaintext highlighter-rouge">R</code> computing environment. Prior experience with GIS/geospatial analysis, <code class="language-plaintext highlighter-rouge">R</code> package development, Git, and/or reproducible research would be an asset. Prospective postdocs from traditionally under-represented groups are especially encouraged to apply.</p>
+
+<p><strong>Application:</strong><br />
+Applicants should electronically submit a single PDF containing the following:</p>
+<ol>
+  <li>a 2-page cover letter detailing your research interests and skills that match the position;</li>
+  <li>a CV (with 3-5 references listed at the end)</li>
+</ol>
+
+<p>Please submit applications via <a href="https://tamus.wd1.myworkdayjobs.com/en-US/TAMUCC_External/job/Corpus-Christi-TAMUCC/Postdoctoral-Research-Associate-in-Biogeography_R-039725" target="_blank">https://tamus.wd1.myworkdayjobs.com/en-US/TAMUCC_External/job/Corpus-Christi-TAMUCC/Postdoctoral-Research-Associate-in-Biogeography_R-039725</a> <br />
+Direct any questions to Dr. Barnabas Daru at <a href="mailto:barnabas.daru@tamucc.edu">barnabas.daru@tamucc.edu</a></p>
+
+<p>The start date is September 2021, with flexibility.</p>
+
+<p><strong>Terms of employment:</strong><br />
+Salary of $40,000-$45,000 (depending on experience), health insurance, and other benefits are included.  This position is based at Texas A&amp;M University-Corpus Christi, and it is an Equal Opportunity/Affirmative Action/Veterans/Disability Employer committed to diversity.</p>
+
+<p>TAMUCC, also known as the Island University is ranked number 1 on ‘The 50 Best Colleges By The Sea’ List.</p>
+
+
+
+<ul class="taxonomy__index">
+  
+  
+    <li>
+      <a href="#2021">
+        <strong>2021</strong> <span class="taxonomy__count">2</span>
+      </a>
+    </li>
+  
+    <li>
+      <a href="#2020">
+        <strong>2020</strong> <span class="taxonomy__count">2</span>
+      </a>
+    </li>
+  
+    <li>
+      <a href="#2019">
+        <strong>2019</strong> <span class="taxonomy__count">1</span>
+      </a>
+    </li>
+  
+</ul>
+
+
+
+
+  <section id="2021" class="taxonomy__section">
+    <h2 class="archive__subtitle">2021</h2>
+    <div class="entries-list">
+      
+        
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/updates/Postdoctoral-Position-Biogeography/" rel="permalink">Lesson 1 - R Basics and Good R practices
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+</p>
+  </article>
+</div>
+
+      
+        
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/updates/PhD-students-biogeography/" rel="permalink">Lesson 2 - R functions and debugging
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+</p>
+  </article>
+</div>
+
+      
+    </div>
+    <a href="#page-title" class="back-to-top">Back to Top &uarr;</a>
+  </section>
+
+  <section id="2020" class="taxonomy__section">
+    <h2 class="archive__subtitle">2020</h2>
+    <div class="entries-list">
+      
+        
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/blog/jordan-winner-of-gers-undergraduate-award/" rel="permalink">Lesson 3 - R Markdown and GitHub
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+</p>
+  </article>
+</div>
+
+      
+        
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/updates/Endemism-Scale-Dependent/" rel="permalink">Lesson 4 - Data types (points, polygons, rasters, phylogenies)
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          5 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+</p>
+  </article>
+</div>
+
+      
+    </div>
+    <a href="#page-title" class="back-to-top">Back to Top &uarr;</a>
+  </section>
+
+  <section id="2019" class="taxonomy__section">
+    <h2 class="archive__subtitle">2019</h2>
+    <div class="entries-list">
+      
+        
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/blog/phylogenetic-diversity-large-datasetes/" rel="permalink">Lesson 5 - Open science and reproducible research
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+</p>
+  </article>
+</div>
+
+      
+    </div>
+    <a href="#page-title" class="back-to-top">Back to Top &uarr;</a>
+  </section>
+
+
+  </div>
+</div>
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+    
+      <li><a target="_blank" rel="noopener noreferrer" href="https://twitter.com/Barnabas_Daru"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+    
+    
+    
+    
+    
+    <li><a target="_blank" rel="noopener noreferrer" href="http://localhost:4000/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">
+  &copy; 2021 Biogeography and Macroecology 2022. <br>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

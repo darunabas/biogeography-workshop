@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<office:color-table xmlns:office="http://openoffice.org/2000/office" xmlns:style="http://openoffice.org/2000/style" xmlns:text="http://openoffice.org/2000/text" xmlns:table="http://openoffice.org/2000/table" xmlns:draw="http://openoffice.org/2000/drawing" xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:meta="http://openoffice.org/2000/meta" xmlns:number="http://openoffice.org/2000/datastyle" xmlns:svg="http://www.w3.org/2000/svg" xmlns:chart="http://openoffice.org/2000/chart" xmlns:dr3d="http://openoffice.org/2000/dr3d" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:form="http://openoffice.org/2000/form" xmlns:script="http://openoffice.org/2000/script" xmlns:config="http://openoffice.org/2001/config">
+<draw:color draw:name="Orange Hilight"	draw:color="#eec73e"/>
+<draw:color draw:name="Orange"	draw:color="#f0a513"/>
+<draw:color draw:name="Orange Base"	draw:color="#fb8b00"/>
+<draw:color draw:name="Orange Shadow"	draw:color="#f44800"/>
+<draw:color draw:name="Accent Yellow Highlight"	draw:color="#ffff99"/>
+<draw:color draw:name="Yellow"	draw:color="#ffff00"/>
+<draw:color draw:name="Accent Yellow Base"	draw:color="#fdca01"/>
+<draw:color draw:name="Accent Yellow Shadow"	draw:color="#986601"/>
+<draw:color draw:name="Accent Orange"	draw:color="#f44800"/>
+<draw:color draw:name="Accent Red"	draw:color="#fd3301"/>
+<draw:color draw:name="Accent Red Base"	draw:color="#d40000"/>
+<draw:color draw:name="Accent Deep Red"	draw:color="#980101"/>
+<draw:color draw:name="Human Highlight"	draw:color="#fdd99b"/>
+<draw:color draw:name="Human"	draw:color="#d9bb7a"/>
+<draw:color draw:name="Human Base"	draw:color="#816647"/>
+<draw:color draw:name="Environmental Shadow"	draw:color="#565248"/>
+<draw:color draw:name="Environmental Blue Highlight"	draw:color="#aaccee"/>
+<draw:color draw:name="Environmental Blue Medium"	draw:color="#6699cc"/>
+<draw:color draw:name="Environmental Blue Base"	draw:color="#336699"/>
+<draw:color draw:name="Environmental Blue Shadow"	draw:color="#003366"/>
+<draw:color draw:name="Accent Blue Shadow"	draw:color="#b3defd"/>
+<draw:color draw:name="Accent Blue"	draw:color="#0197fd"/>
+<draw:color draw:name="Accent Blue Base"	draw:color="#0169c9"/>
+<draw:color draw:name="Accent Blue Shadow"	draw:color="#013397"/>
+<draw:color draw:name="Accent Green Highlight"	draw:color="#ccff99"/>
+<draw:color draw:name="Accent Green"	draw:color="#98fc66"/>
+<draw:color draw:name="Accent Green Base"	draw:color="#339900"/>
+<draw:color draw:name="Accent Green Shadow"	draw:color="#015a01"/>
+<draw:color draw:name="Ubuntu Toner"	draw:color="#002b3d"/>
+<draw:color draw:name="Accent Magenta Highlight"	draw:color="#ff9bff"/>
+<draw:color draw:name="Accent Magenta"	draw:color="#ff00ff"/>
+<draw:color draw:name="Accent Dark Violet"	draw:color="#6600cc"/>
+<draw:color draw:name="Grey 1"	draw:color="#eeeeee"/>
+<draw:color draw:name="Grey 2"	draw:color="#cccccf"/>
+<draw:color draw:name="Grey 3"	draw:color="#aaaaaa"/>
+<draw:color draw:name="Grey 4"	draw:color="#888888"/>
+<draw:color draw:name="Grey 5"	draw:color="#666666"/>
+<draw:color draw:name="Grey 6"	draw:color="#333333"/>
+<draw:color draw:name="Black"	draw:color="#000000"/>
+</office:color-table>
