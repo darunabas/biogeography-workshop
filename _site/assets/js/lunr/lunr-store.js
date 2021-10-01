@@ -1,31 +1,55 @@
 var store = [{
-        "title": "Lesson 5 - Open science and reproducible research",
-        "excerpt":"1. Introduction Phylogenetic diversity is the sum of branch lengths connecting species into the root of a phylogenetic tree. We will demonstrate the ability of our new R package phyloregion to handle and execute large biogeographical datasets for analysis of phylogenetic diversity for 4888 plant species in just five steps!....","categories": ["blog"],
-        "tags": ["Jekyll","update"],
-        "url": "/blog/phylogenetic-diversity-large-datasetes/",
-        "teaser": "/assets/images/figurepd.png"
-      },{
-        "title": "Lesson 4 - Data types (points, polygons, rasters, phylogenies)",
-        "excerpt":"Endemism patterns are scale dependent The spatial variation of biodiversity patterns has for long fascinated biologists, yet our knowledge of how this phenomenon varies from local, regional and global scales have been predicated on models fitted to species richness, extinction risk or density dependence. As a consequence, little is known...","categories": ["Updates"],
+        "title": "Biogeography in R workshop",
+        "excerpt":"Biogeography in R workshop We are excited to announce the maiden edition of a workshop in biogeographic methods and tools development in the R computing environment. The course will be 6 days in length and take place at the Island campus of Texas A&amp;M University-Corpus Christi from the January 10-15,...","categories": ["Updates"],
         "tags": ["link","Post Formats"],
-        "url": "/updates/Endemism-Scale-Dependent/",
-        "teaser": null
-      },{
-        "title": "Lesson 3 - R Markdown and GitHub",
-        "excerpt":"Jordan emerged winner of the undergraduate student presentation at the 2020 Conference of the Gulf Estuarine Research Society (GERS). Jordan’s presentation at GERS addressed the issue of sampling biases in collections record by disentangling areas of mismatches and congruencies in sampling biases between observations and vouchered specimens in the world’s...","categories": ["blog"],
-        "tags": ["Jekyll","update"],
-        "url": "/blog/jordan-winner-of-gers-undergraduate-award/",
-        "teaser": "/assets/images/jordan_gers.jpg"
-      },{
-        "title": "Lesson 2 - R functions and debugging",
-        "excerpt":"PhD Position in Biogeography The Daru lab (https://barnabasdaru.com/) within the Department of Life Sciences at Texas A&amp;M University-Corpus Christi is seeking a PhD student to begin in Spring 2022. The student’s research will focus on a 3-year NSF funded project to develop informatics tools and methods for biogeography (https://doi.org/10.5281/zenodo.4792835). The...","categories": ["Updates"],
-        "tags": ["link","Post Formats"],
-        "url": "/updates/PhD-students-biogeography/",
+        "url": "/updates/00_Biogeography-R-workshop-announcement/",
         "teaser": null
       },{
         "title": "Lesson 1 - R Basics and Good R practices",
+        "excerpt":"Lecture 1: R Basics and Good R practices A 3-year postdoctoral position in developing analytical methods and tools for evolutionary biogeography and macroecology is available in the lab of Barnabas Daru (https://barnabasdaru.com/) in the Department of Life Sciences at Texas A&amp;M University-Corpus Christi. This position is part of a collaborative,...","categories": ["Updates"],
+        "tags": ["link","Post Formats"],
+        "url": "/updates/01_R-basics-and-good-R-practices-Daru/",
+        "teaser": null
+      },{
+        "title": "Lesson 2 - R programming and phylogenetics",
         "excerpt":"Postdoctoral Position in Biogeographic Inference Tools (3 years) A 3-year postdoctoral position in developing analytical methods and tools for evolutionary biogeography and macroecology is available in the lab of Barnabas Daru (https://barnabasdaru.com/) in the Department of Life Sciences at Texas A&amp;M University-Corpus Christi. This position is part of a collaborative,...","categories": ["Updates"],
         "tags": ["link","Post Formats"],
-        "url": "/updates/Postdoctoral-Position-Biogeography/",
+        "url": "/updates/02_R-programming-and-phylogenetics-Bapst/",
+        "teaser": null
+      },{
+        "title": "Lesson 3 - R functions and debugging",
+        "excerpt":"Postdoctoral Position in Biogeographic Inference Tools (3 years) A 3-year postdoctoral position in developing analytical methods and tools for evolutionary biogeography and macroecology is available in the lab of Barnabas Daru (https://barnabasdaru.com/) in the Department of Life Sciences at Texas A&amp;M University-Corpus Christi. This position is part of a collaborative,...","categories": ["Updates"],
+        "tags": ["link","Post Formats"],
+        "url": "/updates/03_R-functions-and-debugging-Schliep/",
+        "teaser": null
+      },{
+        "title": "Lesson 4 - R markdown and GitHub",
+        "excerpt":"Postdoctoral Position in Biogeographic Inference Tools (3 years) A 3-year postdoctoral position in developing analytical methods and tools for evolutionary biogeography and macroecology is available in the lab of Barnabas Daru (https://barnabasdaru.com/) in the Department of Life Sciences at Texas A&amp;M University-Corpus Christi. This position is part of a collaborative,...","categories": ["Updates"],
+        "tags": ["link","Post Formats"],
+        "url": "/updates/04_R-markdown-and-GitHub-Schliep/",
+        "teaser": null
+      },{
+        "title": "Lesson 5 - Open science and reproducible research",
+        "excerpt":"Lesson 5 - Open science and reproducible research (Wright) A 3-year postdoctoral position in developing analytical methods and tools for evolutionary biogeography and macroecology is available in the lab of Barnabas Daru (https://barnabasdaru.com/) in the Department of Life Sciences at Texas A&amp;M University-Corpus Christi. This position is part of a...","categories": ["Updates"],
+        "tags": ["link","Post Formats"],
+        "url": "/updates/05_Open-science-and-reproducible-research-Wright/",
+        "teaser": null
+      },{
+        "title": "Lesson 6 - Biogeographic data types",
+        "excerpt":"Lesson 6 - Biogeographic data types A 3-year postdoctoral position in developing analytical methods and tools for evolutionary biogeography and macroecology is available in the lab of Barnabas Daru (https://barnabasdaru.com/) in the Department of Life Sciences at Texas A&amp;M University-Corpus Christi. This position is part of a collaborative, 3-year NSF...","categories": ["Updates"],
+        "tags": ["link","Post Formats"],
+        "url": "/updates/06_Biogeographic-data-types-Daru/",
+        "teaser": null
+      },{
+        "title": "Lesson 7 - Biome evolution in R",
+        "excerpt":"Lesson 7 Biome evolution in R A 3-year postdoctoral position in developing analytical methods and tools for evolutionary biogeography and macroecology is available in the lab of Barnabas Daru (https://barnabasdaru.com/) in the Department of Life Sciences at Texas A&amp;M University-Corpus Christi. This position is part of a collaborative, 3-year NSF...","categories": ["Updates"],
+        "tags": ["link","Post Formats"],
+        "url": "/updates/07_Biome-evolution-in-R-Daru/",
+        "teaser": null
+      },{
+        "title": "Lesson 8 - Simulation methods",
+        "excerpt":"Lesson 8 - Simulation methods A 3-year postdoctoral position in developing analytical methods and tools for evolutionary biogeography and macroecology is available in the lab of Barnabas Daru (https://barnabasdaru.com/) in the Department of Life Sciences at Texas A&amp;M University-Corpus Christi. This position is part of a collaborative, 3-year NSF funded...","categories": ["Updates"],
+        "tags": ["link","Post Formats"],
+        "url": "/updates/08_Simulation-methods-Bapst/",
         "teaser": null
       }]
