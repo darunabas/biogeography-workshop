@@ -3,7 +3,7 @@ layout: posts
 title: Lesson 4 - R markdown and GitHub
 date: 2021-10-01
 type: post
-published: true
+published: false
 author: barnabas_daru
 status: publish
 classes: wide
@@ -22,4 +22,6 @@ tags:
 ---
 
 ## Lecture 4
+
+Test
 

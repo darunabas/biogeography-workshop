@@ -14,5 +14,4 @@ categories: []
 tags: []
 ---
 
-All additional resources go here
-
+This page contains resources related to R and biogeography including relevant biogeographic packages, books, general reading on R and biogeography, plus many other stuff.

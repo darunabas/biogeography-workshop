@@ -3,7 +3,7 @@ layout: posts
 title: Lesson 1 - R Basics and Good R practices
 date: 2021-10-01
 type: post
-published: true
+published: false
 author: barnabas_daru
 status: publish
 classes: wide
@@ -23,5 +23,5 @@ tags:
 
 ## Lecture 1: R Basics and Good R practices
 
-
+My name is
 

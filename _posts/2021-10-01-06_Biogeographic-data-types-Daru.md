@@ -3,7 +3,7 @@ layout: posts
 title: Lesson 6 - Biogeographic data types
 date: 2021-10-01
 type: post
-published: true
+published: false
 author: barnabas_daru
 status: publish
 classes: wide
@@ -23,5 +23,5 @@ tags:
 
 ## Lesson 6 - Biogeographic data types
 
-
+Temp
 
