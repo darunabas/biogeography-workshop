@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Course content"
+title: "Content"
 date: null
 type: page
 classes: wide
