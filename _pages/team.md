@@ -37,7 +37,7 @@ Barnabas is an Assistant Professor at Texas A&M University-Corpus Christi in the
 
 #### [Klaus Schliep](https://kschliep.netlify.app/){:target="_blank" target="_blank" rel="noopener noreferrer"} 
 ![Klaus-Schliep]({{site.baseurl}}/assets/images/klaus.jpeg){:class="img-responsive"}{:width="200px"}{: style="float: left; padding-right:10px"}
-Klaus is a senior scientist at the Institute of Computational Biotechnology at Graz University of Technology in Austria. His interest lies in the applications of statistics to molecular and especially evolutionary biology. He has developed several R packages including `phangorn` and `ape` and participated in several R workshops and hackathons.<br>
+Klaus is a senior scientist at the Institute of Environmental Biotechnology at Graz University of Technology in Austria. His interest lies in the applications of statistics to molecular and especially evolutionary biology. He has developed several R packages including `phangorn` and `ape` and participated in several R workshops and hackathons.<br>
 
 #### [April Wright](https://wright-lab.com/){:target="_blank" target="_blank" rel="noopener noreferrer"} 
 ![April-Wright]({{site.baseurl}}/assets/images/april.jpeg){:class="img-responsive"}{:width="200px"}{: style="float: left; padding-right:10px"}
