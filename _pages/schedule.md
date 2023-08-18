@@ -4,7 +4,7 @@ title: Schedule
 date:
 type: page
 classes: wide
-published: true
+published: false
 permalink: /schedule/
 status: publish
 header:

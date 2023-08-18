@@ -29,9 +29,6 @@
 <loc>http://localhost:4000/resources/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/schedule/</loc>
-</url>
-<url>
 <loc>http://localhost:4000/tags/</loc>
 </url>
 <url>
@@ -54,7 +51,7 @@
 </url>
 <url>
 <loc>http://localhost:4000/_pages/organizers.html</loc>
-<lastmod>2023-08-17T17:32:39-07:00</lastmod>
+<lastmod>2023-08-17T22:06:15-07:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/docs/a_DaruCVAug2021.pdf</loc>
