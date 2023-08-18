@@ -3,7 +3,7 @@ layout: single
 title: Our Team
 date: null
 type: page
-published: true
+published: false
 status: publish
 header:
   overlay_image: /assets/images/people.png
@@ -12,13 +12,10 @@ excerpt: ""
 permalink: /team/
 categories: []
 tags: []
-toc: true
-toc_label: "Quick Links"
-toc_icon: "cog"
 ---
 
 ### Who We Are  
-This course is organized by Barnabas Daru, in collaboration with instructors/co-organizers Klaus Schliep, April Wright, and David Bapst.
+This course is organized by April Wright and Barnabas Daru, in collaboration with instructor/co-organizer Klaus Schliep.
 
 ---
 ### Our Helpers  

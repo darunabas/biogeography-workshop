@@ -13,8 +13,8 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: "Biogeography and Macroecology 2022"
-repository: darunabas/phyloregion-course-2022
+title: "Biogeography and Macroecology 2023"
+repository: darunabas/biogeography-workshop
 email:
 description:
 url: https://biogeography-workshop.com/
@@ -63,7 +63,7 @@ google_ad_slot           :
 
 # Site Author
 author:
-  name             : "Biogeography and Macroecology 2022"
+  name             : "Biogeography and Macroecology 2023"
   avatar           : "images/logo.png"
   bio              : "Biogeographical regionalization and Macroecology"
   location         : #"The Carpentries"

@@ -2,7 +2,7 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>http://localhost:4000/updates/00_Biogeography-R-workshop-announcement/</loc>
-<lastmod>2021-10-01T00:00:00-05:00</lastmod>
+<lastmod>2021-10-01T00:00:00-07:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/about/</loc>
@@ -41,7 +41,23 @@
 <loc>http://localhost:4000/posts/</loc>
 </url>
 <url>
+<loc>http://localhost:4000/_pages/Podcast.html</loc>
+<lastmod>2023-07-19T20:50:03-07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/_pages/Radio.html</loc>
+<lastmod>2023-07-19T20:56:35-07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/_pages/Videos.html</loc>
+<lastmod>2023-07-19T20:44:50-07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/_pages/organizers.html</loc>
+<lastmod>2023-08-17T17:32:39-07:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/docs/a_DaruCVAug2021.pdf</loc>
-<lastmod>2021-09-17T14:42:33-05:00</lastmod>
+<lastmod>2023-08-17T16:35:28-07:00</lastmod>
 </url>
 </urlset>
