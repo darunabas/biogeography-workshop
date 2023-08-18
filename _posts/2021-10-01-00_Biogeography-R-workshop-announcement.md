@@ -2,7 +2,7 @@
 layout: single
 title: Biogeography in R workshop
 date: 2021-10-01
-published: true
+published: false
 author: barnabas_daru
 status: publish
 classes: wide
