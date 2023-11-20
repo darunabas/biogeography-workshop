@@ -51,16 +51,13 @@ Course content is designed to be flexible to accommodate student interest and ab
 
 | **Day and Time** | **Activity** | **Location** |
 |:-----------------:|:------------:|:------------:|
-| **Sunday Dec 10, 2023** | | |
-| 14:00 | Registration | Tulane River Center |
-| 16:00 | Meet and Greet | Tulane River Center |
 | **Monday Dec 11, 2023** | | |
-| 06:00 | BREAKFAST | Grab-and-Go food at TRC |
-| 08:00 | Welcome and walk to TRC | Pontchartrain Lobby |
+| 08:45 | Welcome and walk to TRC | Pontchartrain Lobby |
+| 09:15 | Grab and Go breakfast | Tulane River Center |
 | 09:30 | R programming and phylogenetics | Tulane River Center |
 | 12:00 | LUNCH | Tulane River Center |
 | 13:00 | Project Pitches | Tulane River Center |
-| 15:00 | TEA | Tulane River Center |
+| 15:00 | Break | Tulane River Center |
 | 15:30 | R basics and good R practices | Tulane River Center |
 | 17:00 | DINNER | On your own |
 | **Tuesday Dec 12, 2023** | | |
@@ -77,7 +74,7 @@ Course content is designed to be flexible to accommodate student interest and ab
 | 09:30 | Open science and reproducible research | Tulane River Center |
 | 09:00 | Biogeographic data types | Tulane River Center |
 | 12:00 | LUNCH | Tulane River Center |
-| 13:00 | Biome evolution in R | Tulane River Center |
+| 14:00 | Biome evolution in R | Tulane River Center |
 | 15:00 | Your first R package | Tulane River Center |
 | 15:30 | Project Stand-ups | Tulane River Center |
 | 17:00 | DINNER | On your own |
@@ -87,7 +84,7 @@ Course content is designed to be flexible to accommodate student interest and ab
 | 10:00 | Visit to City Park via 91 bus | City Park |
 | 12:00 | LUNCH (on your own) | Tulane River Center |
 | 13:00 | Project work | Tulane River Center |
-| 15:00 | TEA | Tulane River Center |
+| 14:00 | Break | Tulane River Center |
 | 15:30 | Project work | Tulane River Center |
 | 17:00 | Project stand-ups | Tulane River Center |
 | **Friday Dec 15, 2023** | | |
@@ -95,11 +92,10 @@ Course content is designed to be flexible to accommodate student interest and ab
 | 08:00 | Project Work | Tulane River Center |
 | 10:00 | Project Work | Tulane River Center |
 | 12:00 | LUNCH | Tulane River Center |
-| 13:00 | Presentations | Tulane River Center |
-| 15:00 | TEA | Tulane River Center |
+| 14:00 | Presentations | Tulane River Center |
+| 15:00 | Break | Tulane River Center |
 | 15:30 | Presentations | Tulane River Center |
 | 17:00 | DINNER | On your own |
 | **Saturday Dec 16, 2023** | | |
-| 06:00 | BREAKFAST | Pontchartrain Hotel Lobby |
-| 08:00 | Departure |  |
+| 00:00 | Departure |  |
 
