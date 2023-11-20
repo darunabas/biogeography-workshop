@@ -5,7 +5,7 @@ date:
 type: page
 classes: wide
 published: true
-permalink: /schedule/
+permalink: /installs/
 status: publish
 header:
   overlay_image: /assets/images/people.png
