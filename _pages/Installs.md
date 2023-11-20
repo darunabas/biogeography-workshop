@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Schedule
+title: Installations
 date:
 type: page
 classes: wide
