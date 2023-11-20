@@ -1,1 +1,4 @@
-# phyloregion-course-2022
+# Biogeography Workshop in R
+
+## December 10-16
+### New Orleans Louisiana

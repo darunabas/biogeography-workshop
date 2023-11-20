@@ -1,0 +1,65 @@
+---
+title: "Schedule.Rmd"
+author: "April Wright"
+date: "2023-11-20"
+output: html_document
+---
+
+## Monday, Dec. 11
+
+| Time | Activity | Location |
+|------|----------|----------|
+| 8:45 AM | Welcome and Walk to Tulane River and Coastal Center | Hotel Pontchartrain Lobby |
+| 9:15 AM | Grab and Go Breakfast Items | Tulane River and Coastal Center |
+| 9:30 AM | R Programming for Phylogenetics (Wright) | Tulane River and Coastal Center |
+| Noon  | Lunch | On your own |
+| 1 PM | Project Pitches and Unstructured Time | Tulane River and Coastal Center |
+| 3 PM | R Good Practices (Daru) | Tulane River and Coastal Center |
+| 5 PM | Adjourn | On your own |
+
+## Tuesday, Dec. 12
+
+| Time | Activity | Location |
+|------|----------|----------|
+| 8:45 AM | Walk to Tulane River and Coastal Center | Hotel Pontchartrain Lobby |
+| 9:15 AM | Grab and Go Breakfast Items | Tulane River and Coastal Center |
+| 9:30 AM | R Functions and Debugging (Bapst) | Tulane River and Coastal Center |
+| 10:30 AM | GitHub (Wright) | Tulane River and Coastal Center |
+| Noon  | Lunch | On your own |
+| 1 PM | Grab and Go Lunch; Audubon Zoo  | Tulane River and Coastal Center; Zoo |
+| 3 PM | Project Break Outs and Worktime | Tulane River and Coastal Center |
+| 5 PM | Project Stand-ups and Adjourn | Tulane River and Coastal Center |
+
+## Wednesday, Dec. 13
+
+| Time | Activity | Location |
+|------|----------|----------|
+| 8:45 AM | Walk to Tulane River and Coastal Center | Hotel Pontchartrain Lobby |
+| 9:15 AM | Grab and Go Breakfast Items | Tulane River and Coastal Center |
+| 9:30 AM | Biogeographic data types (Daru) | Tulane River and Coastal Center |
+| 10:30 AM | Open Science and Reproducibility (Wright) | Tulane River and Coastal Center |
+| Noon  | Lunch | On your own |
+| 1 PM | Species Distribution Modeling in R (Daru)  | Tulane River and Coastal Center; Zoo |
+| 3 PM | Basics of R packages (Bapst or Wright) | Tulane River and Coastal Center |
+| 5 PM | Project Stand-ups and Adjourn | Tulane River and Coastal Center |
+
+## Thursday, Dec. 14
+
+| Time | Activity | Location |
+|------|----------|----------|
+| 8:45 AM | Grab and Go Breakfast Items | Pontchartrain Hotel |
+| 9:00 AM | Visit City Park - optional | City Park |
+| Noon  | Lunch | On your own |
+| 1 PM | Biome Evolution (Daru)  | Tulane River and Coastal Center; Zoo |
+| 3 PM | Worktime  | Tulane River and Coastal Center |
+| 5 PM | Project Stand-ups and Adjourn | Tulane River and Coastal Center |
+
+## Friday, Dec. 15
+
+| Time | Activity | Location |
+|------|----------|----------|
+| 8:45 AM | Grab and Go Breakfast Items | Tulane River and Coastal Center |
+| 9:00 AM | Project Worktime | Tulane River and Coastal Center |
+| Noon  | Lunch | On your own |
+| 1 PM | Project Presentation  | Tulane River and Coastal Center; Zoo |
+| 5 PM | Adjourn | Tulane River and Coastal Center |

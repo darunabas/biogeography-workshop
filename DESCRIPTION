@@ -1,0 +1,25 @@
+Package: BiogeographyWorkshop
+Type: Package
+Title: 2023 Shortcourse in Biogeography in R
+Version: 12.10.2023
+Authors@R: c(
+  person("April", "Wright", role = c("aut", "cre"), email = "april.wright@selu.edu"),
+	person("David", "Bapst", role = c("aut")),
+  person("Barnabas", "Daru", role = c("aut")))
+Maintainer: April Wright <april.wright@selu.edu>
+Description: This contrains the course materials for the Biogeography in R shortcourse. Sponsored by Stanford University and Southeastern Louisiana University, this workshop takes place Dec. 10-16, 2023, in New Orleans, Louisiana.
+License: CC0
+Depends:
+	phyloregion,
+	ape,
+  phytools,	
+  phangorn,
+	pkgdown,
+	phytools,
+	knitr
+Suggests:
+    testthat,
+    rmarkdown
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
