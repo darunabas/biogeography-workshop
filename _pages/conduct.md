@@ -12,17 +12,17 @@ excerpt: ""
 permalink: /conduct/
 categories: []
 tags: []
-toc: true
+toc: false
 toc_label: "Quick Links"
 toc_icon: "cog"
 ---
 
 Please read the following. The official PDF version of this document is here.
 
-Expectations for Conduct for the 2022 Biogeography and Macroecology Workshop
+Expectations for Conduct for the 2023 Biogeography and Macroecology Workshop
  
 
-The 2022 Biogeography and Macroecology Workshop Code of Conduct applies here, and we wish to particularly emphasize our expectations of behavior for our participants, helpers and organizers at this event.
+The 2023 Biogeography and Macroecology Workshop Code of Conduct applies here, and we wish to particularly emphasize our expectations of behavior for our participants, helpers and organizers at this event.
 
 ### Examples of Expected Good Behavior:  
 * Use welcoming and inclusive language
@@ -47,4 +47,4 @@ The 2022 Biogeography and Macroecology Workshop Code of Conduct applies here, an
 * Publication of private communication without consent
 
 ### Consequences of Unacceptable Behavior:  
-Participants who are asked to stop any inappropriate behavior are expected to comply immediately. If a participant engages in behavior that violates the Biogeography and Macroecology Workshop Code of Conduct, the organizers may warn the offender or ask them to leave the event or platform. All violations of the Biogeography and Macroecology Workshop Code of Conduct will be reported to Texas A&M University-Corpus Christi Police.
+Participants who are asked to stop any inappropriate behavior are expected to comply immediately. If a participant engages in behavior that violates the Biogeography and Macroecology Workshop Code of Conduct, the organizers may warn the offender or ask them to leave the event or platform. All violations of the Biogeography and Macroecology Workshop Code of Conduct will be reported to Tulane University Police.

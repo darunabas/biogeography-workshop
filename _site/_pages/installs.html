@@ -1,0 +1,52 @@
+<div class="research-info">
+    <style>
+        pre {
+            background-color: #000000;
+            padding: 10px;
+            font-size: 13px;
+        }
+    </style>
+
+  <h3>Software installations</h3>
+  <hr>
+<p>Workshop participants should have a working laptop with R installed. RStudio is strongly suggested.</p>
+
+<code>R</code> is available for the common computer operating systems: Mac, Linux, or Windows
+
+For this workshop, you will need both R (>= R 4.3.0) and Rstudio:
+
+<code>R</code> can be downloaded at https://www.r-project.org/
+
+Rstudio Desktop can be downloaded at https://posit.co/download/rstudio-desktop/
+
+Installing <code>R</code> packages:
+
+Most of the packages that we will use for this workshop are available from the Comprehensive R Archive Network (CRAN), so you can use the following line of code to install and run them:
+
+<pre><code>install.packages("packageName") e.g., install.packages("phyloregion")</code></pre>
+
+Alternatively, you can install the development versions hosted on GitHub, which are usually more updated than the version on CRAN. To do this, you will need to install the devtools package. In <code>R</code>, type:
+
+<pre><code>if (!requireNamespace("devtools", quietly = TRUE)) 
+    install.packages("devtools")
+
+devtools::install_github("darunabas/packageName") e.g., devtools::install_github("darunabas/phyloregion")
+</code></pre>
+
+You can download the whole workshop website and lessons from <a href="https://github.com/darunabas/biogeography-workshop" target="_blank" rel="noopener noreferrer">here</a>.
+<p>In the meantime, please install the following packages:</p>
+
+    <pre><code>
+install.packages("phyloregion")
+install.packages("ape")
+install.packages("phytools") 
+install.packages("phangorn") 
+install.packages("tidyverse") 
+install.packages("devtools")
+install.packages("pkgdown")
+install.packages("knitr")
+install.packages("rmarkdown")
+    </code></pre>
+<p>If you choose not to use RStudio, a text editor that can edit plain text and Markdown files is also necessary. BBEdit or TextEdit are fine. </p>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<div class="research-info">
+    <style>
+        pre {
+            background-color: #000000;
+            padding: 10px;
+            font-size: 13px;
+        }
+    </style>
+
+    <h3>Convert DataFrame of Coordinates to GPX Format in Four Steps</h3>
+    <hr>
+
+    <p>Often, one may have a data frame of locations with attributes such as species names and may wish to create a GPX file from this data to use with a navigation software such as a GPS device. This can be achieved in four steps as follows:</p>
+
+    <h4>Step 1: Load R Library and DataFrame</h4>
+    <pre><code># Load R library and dataframe
+library(terra)
+
+x &lt;- data.frame(NAME=c("Species1", "Species2", "Species3"),
+                LAT=c(70.11, 70.032145, 68.619535),
+                LON=c(-148.52, -148.640821, -149.556137))
+head(x)
+    </code></pre>
+
+    <h4>Step 2: Create a Spatial Vector from the DataFrame</h4>
+    <pre><code># Create a spatial vector from the dataframe
+v &lt;- vect(x, geom=c("LON", "LAT"), crs="+proj=longlat +datum=WGS84")
+    </code></pre>
+
+    <h4>Step 3: Write the Spatial Vector to File in GPX Format</h4>
+    <pre><code># Write the spatial vector to file in GPX format
+writeVector(v, "~/GPS_waypoints.gpx", filetype="GPX", layer="waypoints", 
+            overwrite=TRUE, options="GPX_USE_EXTENSIONS=yes")
+    </code></pre>
+
+    <h4>Step 4: Upload File to GPS Device</h4>
+    <p>Connect your GPS device to a computer, and drag and drop the new file in the GPX folder of your GPS device. That's it!</p>
+</body>
+</html>
+
+
