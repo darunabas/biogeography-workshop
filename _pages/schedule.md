@@ -56,7 +56,7 @@ Course content is designed to be flexible to accommodate student interest and ab
 | 09:15 | Grab and Go breakfast | Tulane River Center |
 | 09:30 | R programming and phylogenetics | Tulane River Center |
 | 12:00 | LUNCH | Tulane River Center |
-| 13:00 | Project Pitches | Tulane River Center |
+| 14:00 | Project Pitches | Tulane River Center |
 | 15:00 | Break | Tulane River Center |
 | 15:30 | R basics and good R practices | Tulane River Center |
 | 17:00 | DINNER | On your own |
