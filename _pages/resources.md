@@ -7,7 +7,7 @@ header:
   overlay_image: /assets/images/Fynbos.JPG
   overlay_filter: 0.1
 excerpt: ""
-published: true
+published: false
 status: publish
 permalink: /resources/
 categories: []

@@ -1,14 +1,14 @@
 ---
 layout: single
-title: Our Team
+title: Codes, protocols, and datasets
 date:
 type: page
 classes: wide
 published: true
-permalink: /team/
+permalink: /resources/
 status: publish
 header:
-  overlay_image: /assets/images/people.png
+  overlay_image: /assets/images/Fynbos.JPG
   overlay_filter: 0.5
 excerpt: ""
 categories: []
@@ -183,13 +183,14 @@ tags: []
 </style>
 
 <div class="tab">
-  <button class="tablinks active" onclick="openTab(event, 'home')">Organizers</button>
-  <button class="tablinks" onclick="openTab(event, 'tab1')">Helpers</button>
+  <button class="tablinks active" onclick="openTab(event, 'home')">Installs</button>
+  <button class="tablinks" onclick="openTab(event, 'tab1')">Readings</button>
 </div>
+
 <div id="home" class="tabcontent" style="display:block;">
   <script>
     var xhr = new XMLHttpRequest();
-    var url = "/_pages/organizers.html";
+    var url = "/_pages/installs.html";
     xhr.open("GET", url, true);
     xhr.onreadystatechange = function() {
       if (xhr.readyState === 4 && xhr.status === 200) {
@@ -201,22 +202,18 @@ tags: []
 </div>
 
 <div id="tab1" class="tabcontent">
-  <h3>Our Helpers</h3>
-  This course utilizes a number of assistant instructors called ‘helpers’, who will be roving the room to help learners who are having issues, while an instructor lectures and does exercises. Our helpers are just as integral to our short course being successful as our instructors - perhaps even more important!
-  
-  <p>Our current roster of helpers, and their contact information:</p>
-  <div style="display:flex; flex-wrap:wrap; justify-content:center;">
-    <div style="width:250px; margin:10px;">
-        <img src="/assets/images/nhaulman.jpg" alt="Natasha Haulman" style="width:100%;" class="img-responsive">
-        <div>
-            <h4>Natasha Haulman</h4>
-            <p style="font-size:12pt;">Natasha is the Administrative Manager of the Daru lab at Stanford University</p>
-        </div>
-    </div>
-    </div>
-<div>
-
-
+  <script>
+    var xhr1 = new XMLHttpRequest();
+    var url1 = "/_pages/readings.html";
+    xhr1.open("GET", url1, true);
+    xhr1.onreadystatechange = function() {
+      if (xhr1.readyState === 4 && xhr1.status === 200) {
+        document.getElementById("tab1").innerHTML = xhr1.responseText;
+      }
+    };
+    xhr1.send();
+  </script>
+</div>
 
 <script>
 function openTab(evt, tabName) {
@@ -238,7 +235,5 @@ window.onload = function() {
   document.getElementsByClassName("tablinks")[0].click();
 }
 </script>
-
-
 
 {% endraw %}

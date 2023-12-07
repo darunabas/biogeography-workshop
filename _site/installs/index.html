@@ -9,7 +9,7 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Our Team - Biogeography and Macroecology 2023</title>
+<!-- begin _includes/seo.html --><title>Installations - Biogeography and Macroecology 2023</title>
 <meta name="description" content="">
 
 
@@ -20,8 +20,8 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Biogeography and Macroecology 2023">
-<meta property="og:title" content="Our Team">
-<meta property="og:url" content="http://localhost:4000/team/">
+<meta property="og:title" content="Installations">
+<meta property="og:url" content="http://localhost:4000/installs/">
 
 
 
@@ -31,9 +31,9 @@
 
 
   <meta name="twitter:site" content="@Barnabas_Daru">
-  <meta name="twitter:title" content="Our Team">
+  <meta name="twitter:title" content="Installations">
   <meta name="twitter:description" content="">
-  <meta name="twitter:url" content="http://localhost:4000/team/">
+  <meta name="twitter:url" content="http://localhost:4000/installs/">
 
   
     <meta name="twitter:card" content="summary_large_image">
@@ -53,7 +53,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/team/">
+<link rel="canonical" href="http://localhost:4000/installs/">
 
 
 
@@ -169,7 +169,7 @@
     <div class="wrapper">
       <h1 id="page-title" class="page__title" itemprop="headline">
         
-          Our Team
+          Installations
 
         
       </h1>
@@ -298,7 +298,7 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Our Team">
+    <meta itemprop="headline" content="Installations">
     <meta itemprop="description" content="">
     
     
@@ -308,233 +308,28 @@
 
       <section class="page__content" itemprop="text">
         
-        
+        <h2 id="installs">Installs</h2>
 
-<style>
-  .tab {
-    overflow: hidden;
-    background-color: rgba(211, 211, 211, 0.5);
-    border-radius: 10px 10px 0 0;
-  }
+<p>Workshop participants should have a working laptop with R installed. RStudio is strongly suggested.</p>
 
-  .tab button {
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 10px 20px;
-    transition: 0.3s;
-    font-size: 17px;
-    border-top: 2px solid lightgrey;
-    border-left: 2px solid lightgrey;
-    border-right: 2px solid lightgrey;
-    border-bottom: none;
-    border-radius: 10px 10px 0 0;
-    margin-right: 2px;
+<p>You can download the whole workshop website and lessons from <a href="https://github.com/darunabas/biogeography-workshop">here</a>.</p>
 
-    /* New styles for white/light grey background */
-    background-color: white;
-    color: #333; /* Adjust text color as needed */
-    border-top-color: lightgrey;
-    border-left-color: lightgrey;
-    border-right-color: lightgrey;
-}
+<p>Necessary R packages:</p>
 
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+install.packages("phyloregion")
+install.packages("ape")
+install.packages("phytools") 
+install.packages("phangorn") 
+install.packages("tidyverse") 
+install.packages("devtools")
+install.packages("pkgdown")
+install.packages("knitr")
+install.packages("rmarkdown")
 
-  .tab button:hover {
-    background-color: lightgrey;
-  }
+</code></pre></div></div>
 
-  .tab button.active {
-    background-color: darkgrey;
-    color: #fff;
-  }
-
-  .tabcontent {
-    display: none;
-    padding: 6px 12px;
-    border: 2px solid lightgrey;
-    border-top: none;
-    border-radius: 0 10px 10px 10px;
-  }
-
-  .tabcontent img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .tabcontent h3,
-  .tabcontent h4,
-  .tabcontent h6,
-  .tabcontent p {
-    text-align: left;
-  }
-
-  .tabcontent a {
-    color: blue;
-    text-decoration: none;
-  }
-
-  .tabcontent a:hover {
-    text-decoration: underline;
-  }
-
-  .tabcontent .date {
-    font-size: 10pt;
-    text-align: left;
-    margin-top: 5px;
-  }
-
-  .gallery-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .album {
-    border: 1px solid #ccc;
-    padding: 10px;
-    width: calc(50% - 12px); /* Adjust width based on your preference */
-  }
-
-  .thumbnail-item,
-  .collage-item {
-    width: 250px;
-    margin: 1px; /* Adjust the margin to reduce the gap between images */
-    flex: 1 0 20%; /* Adjust the width as needed, 20% means five images in a row */
-    max-width: 100%;
-    height: auto;
-    box-sizing: border-box;
-    cursor: pointer;
-  }
-
-  .thumbnail-img,
-  .collage-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: transform 0.2s ease;
-  }
-
-  .thumbnail-img:hover,
-  .collage-item:hover img {
-    transform: scale(1.1);
-  }
-
-  .lightbox {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    justify-content: center;
-    align-items: center;
-  }
-
-  .lightbox-image {
-    max-width: 90%;
-    max-height: 90%;
-  }
-
-  .lightbox-nav {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .album-title {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-
-  .album-container {
-    margin-bottom: 30px;
-  }
-
-  .album-images {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-
-  @media screen and (max-width: 800px) {
-    .thumbnail-item,
-    .collage-item {
-      width: 100%;
-    }
-  }
-</style>
-
-<div class="tab">
-  <button class="tablinks active" onclick="openTab(event, 'home')">Organizers</button>
-  <button class="tablinks" onclick="openTab(event, 'tab1')">Helpers</button>
-</div>
-<div id="home" class="tabcontent" style="display:block;">
-  <script>
-    var xhr = new XMLHttpRequest();
-    var url = "/_pages/organizers.html";
-    xhr.open("GET", url, true);
-    xhr.onreadystatechange = function() {
-      if (xhr.readyState === 4 && xhr.status === 200) {
-        document.getElementById("home").innerHTML = xhr.responseText;
-      }
-    };
-    xhr.send();
-  </script>
-</div>
-
-<div id="tab1" class="tabcontent">
-  <h3>Our Helpers</h3>
-  This course utilizes a number of assistant instructors called ‘helpers’, who will be roving the room to help learners who are having issues, while an instructor lectures and does exercises. Our helpers are just as integral to our short course being successful as our instructors - perhaps even more important!
-  
-  <p>Our current roster of helpers, and their contact information:</p>
-  <div style="display:flex; flex-wrap:wrap; justify-content:center;">
-    <div style="width:250px; margin:10px;">
-        <img src="/assets/images/nhaulman.jpg" alt="Natasha Haulman" style="width:100%;" class="img-responsive">
-        <div>
-            <h4>Natasha Haulman</h4>
-            <p style="font-size:12pt;">Natasha is the Administrative Manager of the Daru lab at Stanford University</p>
-        </div>
-    </div>
-    </div>
-<div>
-
-
-
-<script>
-function openTab(evt, tabName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(tabName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-
-// Add this code to set the home tab as default on page load
-window.onload = function() {
-  document.getElementsByClassName("tablinks")[0].click();
-}
-</script>
-
-
-
-
+<p>If you choose not to use RStudio, a text editor that can edit plain text and Markdown files is also necessary. BBEdit or TextEdit are fine.</p>
 
         
       </section>
