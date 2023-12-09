@@ -1,0 +1,597 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Lesson 1 - Packaging R Code - Biogeography and Macroecology 2023</title>
+<meta name="description" content="">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Biogeography and Macroecology 2023">
+<meta property="og:title" content="Lesson 1 - Packaging R Code">
+<meta property="og:url" content="http://localhost:4000/updates/01_Packaging-R-Code-Wright/">
+
+
+
+
+  <meta property="og:image" content="http://localhost:4000/assets/images/tulane.jpg">
+
+
+
+  <meta name="twitter:site" content="@Barnabas_Daru">
+  <meta name="twitter:title" content="Lesson 1 - Packaging R Code">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:url" content="http://localhost:4000/updates/01_Packaging-R-Code-Wright/">
+
+  
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="http://localhost:4000/assets/images/tulane.jpg">
+  
+
+  
+
+
+
+  <meta property="article:published_time" content="2023-11-10T00:00:00-08:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/updates/01_Packaging-R-Code-Wright/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": null,
+      "url": "http://localhost:4000/",
+      "sameAs": ["https://github.com/darunabas/phyloregion-course-2022","https://twitter.com/Barnabas_Daru"]
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Biogeography and Macroecology 2023 Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--posts wide">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Biogeography and Macroecology 2023
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/team/">Our Team</a>
+            </li><li class="masthead__menu-item">
+              <a href="/schedule/">Schedule</a>
+            </li><li class="masthead__menu-item">
+              <a href="/blog/">Content</a>
+            </li><li class="masthead__menu-item">
+              <a href="/conduct/">Conduct</a>
+            </li><li class="masthead__menu-item">
+              <a href="/resources/">Resources</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+  
+
+
+
+
+
+
+
+<div class="page__hero--overlay"
+  style=" background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/assets/images/tulane.jpg');"
+>
+  
+    <div class="wrapper">
+      <h1 id="page-title" class="page__title" itemprop="headline">
+        
+          Lesson 1 - Packaging R Code
+
+        
+      </h1>
+      
+        <p class="page__lead">
+</p>
+      
+      
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          5 minute read
+        
+      </span>
+    
+  </p>
+
+
+      
+      
+    </div>
+  
+  
+</div>
+
+
+
+
+
+<div id="main" role="main">
+  
+
+
+  <div class="archive">
+    
+    <!-- Look the author details up from the site config. -->
+
+
+<!-- Output author details if some exist. -->
+
+
+<h2 id="lesson-1---packaging-r-code-wright">Lesson 1 - Packaging R Code (Wright)</h2>
+
+<h1 id="objectives">Objectives:</h1>
+
+<ul>
+  <li>Be able to explain why put code in an R package.</li>
+  <li>Understand the parts of an R package.</li>
+</ul>
+
+<h2 id="why-put-code-in-a-package">Why Put Code In a Package?</h2>
+
+<p>We’re all busy, stressed-out people. Why should we put in the effort to package code, when we could be starting another project. Or collecting data on another paper? I’d argue that there are tree main points:</p>
+
+<ul>
+  <li>Reproducibility:  If a package is well-developed, you know the code works. If it’s documented, you know who it works.</li>
+  <li>Tidyness: Most R packages have a standard structure incorporating both documentation and testing. Everything in its right place, and a place for everything.</li>
+  <li>Collaboration: You are your most common collaborator. Who remembers what they had for breakfast? Documentation is a love letter to yourself. Whether it’s for you to remember what you did, or so you don’t get an email when a stressed-out grad student finds your package, using a standard infrastructure means people can find what they need.</li>
+</ul>
+
+<h2 id="rstudio-and-integrated-tools-for-package-building">RStudio and integrated tools for package building</h2>
+<p>blogo
+File &gt; New Project &gt; R Package</p>
+
+<p>Choose to initialize a revision management repository with the package.</p>
+
+<p>When we do this in RStudio, R initializes a package. It was several components:</p>
+
+<ul>
+  <li>man: this is where documentation will live</li>
+  <li>.Rproj: this houses variables defined in the project</li>
+  <li>R: this is where R code and functions will live</li>
+  <li>Description: which specifies the metadata associated with the project.</li>
+</ul>
+
+<p>You can see that our package initialized with one function, <code class="language-plaintext highlighter-rouge">hello.R</code>. In it, you’ll notice one function. If we type <code class="language-plaintext highlighter-rouge">Cmd + Shift + B</code>, this will build and install the package. Once we do this, we can call the <code class="language-plaintext highlighter-rouge">hello()</code> function. This also includes <code class="language-plaintext highlighter-rouge">hello()</code> into the standard R documentation system. If you type <code class="language-plaintext highlighter-rouge">?hello</code>, for example you will see the usual help window display.</p>
+
+<p>We can also Check or Test our package. Try <code class="language-plaintext highlighter-rouge">Cmd + Shift + E</code>. What is this output you see?</p>
+
+<p>How about <code class="language-plaintext highlighter-rouge">Cmd + Shift + T</code>? Right - we don’t have a test directory yet!</p>
+
+<h2 id="package-dissections">Package Dissections</h2>
+
+<p>Let’s look briefly at an R package and see what one looks like under the hood. Instructors will walk through an R package of their own.</p>
+
+<h2 id="testing">Testing</h2>
+
+<p>Now, we will return to our own package. We have one function, and no tests. People can mean different things when they say “testing”. We will talk today about runtime testing, and unit testing.</p>
+
+<h3 id="unit-testing">Unit testing</h3>
+
+<p>Unit tests can be thought of as automated checking to make sure your code works. For example, let’s write a function that calculates the area of a square. Save it into your R folder, and rebuild the package. Run your function. Did it work? How do you know?</p>
+
+<p>Manually checking code works great for easy values. Any amount of complexity, though, rapidly descreases our ability to test by eye. Unit testing tests the code itself. Are you getting the expected output from a set of pre-defined in and outputs? If not, that could indicate a problem. Perhaps the interface to a function on which your code relies has changed, and now you’re providing the wrong inputs. Or between versions, the default precision changes. You want to capture these changes to make sure you’re on track.</p>
+
+<p>Let’s start by making a <code class="language-plaintext highlighter-rouge">tests</code> folder. We’ll use the R package <code class="language-plaintext highlighter-rouge">testthat</code> to write some tests. Make a subfolder called <code class="language-plaintext highlighter-rouge">testthat</code>. Type <code class="language-plaintext highlighter-rouge">testthat::</code> and use tab to cycle through the options. Are there any options that would be good for testing something about our calculation? The format of a test will look like this:</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="w">
+</span><span class="n">test_that</span><span class="p">(</span><span class="s2">"Test square_calc(known data)"</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w">
+  </span><span class="n">Condition</span><span class="w"> 
+</span><span class="p">})</span><span class="w">
+</span></code></pre></div></div>
+
+<p>Let’s make a quick function that squares a number. We’d like to know it works, eh? We could  check that we get the expected result, like so:</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">square_calc</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="k">function</span><span class="p">(</span><span class="n">x</span><span class="p">){</span><span class="w">
+  </span><span class="n">sq</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">x</span><span class="o">*</span><span class="n">x</span><span class="w">
+  </span><span class="nf">return</span><span class="p">(</span><span class="n">sq</span><span class="p">)</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
+</span><span class="n">library</span><span class="p">(</span><span class="n">testthat</span><span class="p">)</span><span class="w">
+</span><span class="n">test_that</span><span class="p">(</span><span class="s2">"Test square_calc()"</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w">
+  </span><span class="n">expect_equal</span><span class="p">(</span><span class="m">6.0025</span><span class="p">,</span><span class="w"> </span><span class="n">square_calc</span><span class="p">(</span><span class="m">2.45</span><span class="p">))</span><span class="w"> 
+</span><span class="p">})</span><span class="w">
+</span></code></pre></div></div>
+
+<p>Discuss with a partner:</p>
+<ul>
+  <li>What types of conditions will cause this to fail?</li>
+  <li>Is this test robust to new datatypes?</li>
+  <li>When could you use such an inflexible test?</li>
+  <li>When can you not use such an inflexible test?</li>
+</ul>
+
+<h3 id="run-time-testing">Run Time Testing</h3>
+
+<p>Where unit testing is about catching errors in the code, errors caused by dependency changes, and similar errors, runtime testing tests the behavior of the user and data. For example, if your method cannot handle missing data values, you need to make sure your user are not trying to use data with missing characters. Every run time check you write is an email you don’t get later.</p>
+
+<p>What is something that could break our function? For example, my idea is to make sure the side of the square is a numeric type:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>library(assertthat)
+
+ square_calc &lt;- function(side_length){
+      side_length %has_attr% "numeric"
+       area &lt;- side_length^2
+       return(area)
+   }
+</code></pre></div></div>
+
+<p>Try to break it! This is often referred to as a <code class="language-plaintext highlighter-rouge">precondition</code> - that is, if this is not true prior to the start of the function, the function will not execute. We can also test <code class="language-plaintext highlighter-rouge">post conditions</code>, which are attributes we need to be true at the end of the function.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>library(assertthat)
+
+ square_calc &lt;- function(side_length){
+      side_length %has_attr% "numeric"
+       area &lt;- side_length^2
+       assert_that(sqrt(area) == side_length)
+       return(area)
+   }
+</code></pre></div></div>
+
+<p>We can also write our own error messages. Try the below with both object types:</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="w">
+</span><span class="n">tree</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">phytools</span><span class="o">::</span><span class="n">pbtree</span><span class="p">(</span><span class="n">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">10</span><span class="p">)</span><span class="w">
+</span><span class="n">t</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"a"</span><span class="p">,</span><span class="w"> </span><span class="s2">"b"</span><span class="p">,</span><span class="w"> </span><span class="s2">"c"</span><span class="p">)</span><span class="w">
+
+</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">inherits</span><span class="p">(</span><span class="n">ENTER</span><span class="w"> </span><span class="n">HERE</span><span class="p">,</span><span class="w"> </span><span class="s2">"phylo"</span><span class="p">)){</span><span class="w">
+    </span><span class="n">stop</span><span class="p">(</span><span class="s2">"tree must be of class 'phylo'"</span><span class="p">)</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+
+</span></code></pre></div></div>
+
+<h2 id="documentation">Documentation</h2>
+
+<p>Go ahead and open up the .R file for one of your. We’ll now add some documentation. That typically takes this format:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#' Short description of what the function does.
+#'
+#' Longer description of what a function does. Do you need certain inputs? Specify them 
+#' here. Do you  calculate the likelihood of data given a specific formulation of a model? #' Let people know which here!
+#' 
+#' @param Inputs to function
+#' @export 
+</code></pre></div></div>
+
+<p>When you have written the documentation you would like to have, you can run</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="w">
+</span><span class="n">devtools</span><span class="o">::</span><span class="n">document</span><span class="p">()</span><span class="w">
+
+</span></code></pre></div></div>
+
+<p>This function will build manuals and online help pages (.Rd files) from your headers. These are important components of usable documentation!</p>
+
+<h2 id="vignettes">Vignettes</h2>
+
+<p>Create a directory called Vignettes, and an RMarkdown document within it. Let’s walk through some core components of a tutorial.</p>
+
+<h2 id="installation">Installation</h2>
+
+<p>Once your package is on GitHub, it can be installed by others with either</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="w">
+</span><span class="n">devtools</span><span class="o">::</span><span class="n">install_github</span><span class="p">(</span><span class="s2">"githubusername/Repo"</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># or</span><span class="w">
+
+</span><span class="n">remotes</span><span class="o">::</span><span class="n">install_github</span><span class="p">(</span><span class="s2">"githubusername/Repo"</span><span class="p">)</span><span class="w">
+
+</span></code></pre></div></div>
+
+<h2 id="getting-help-with-packages">Getting Help with Packages</h2>
+
+<p>One of the trickiest things about package development is a lot of the help we get as novices sort of falls away.</p>
+
+<p><a href="https://devguide.ropensci.org/">ROpenScience</a> has an R Package guide, which is chock full of wisdom, literate programming advice, and information on testing and other intermediate skills.
+They also operate a <a href="https://discuss.ropensci.org/">forum</a> for developers, users, and other people who dig software, I guess? The culture of it is very collegial.</p>
+
+
+
+<ul class="taxonomy__index">
+  
+  
+    <li>
+      <a href="#2023">
+        <strong>2023</strong> <span class="taxonomy__count">2</span>
+      </a>
+    </li>
+  
+    <li>
+      <a href="#2019">
+        <strong>2019</strong> <span class="taxonomy__count">1</span>
+      </a>
+    </li>
+  
+</ul>
+
+
+
+
+  <section id="2023" class="taxonomy__section">
+    <h2 class="archive__subtitle">2023</h2>
+    <div class="entries-list">
+      
+        
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/updates/02_Tree-structure/" rel="permalink">Lesson 2 - Tree structure
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          11 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+</p>
+  </article>
+</div>
+
+      
+        
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/updates/01_Packaging-R-Code-Wright/" rel="permalink">Lesson 1 - Packaging R Code
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          5 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+</p>
+  </article>
+</div>
+
+      
+    </div>
+    <a href="#page-title" class="back-to-top">Back to Top &uarr;</a>
+  </section>
+
+  <section id="2019" class="taxonomy__section">
+    <h2 class="archive__subtitle">2019</h2>
+    <div class="entries-list">
+      
+        
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/03-RPhylo/" rel="permalink">Tree structure
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          10 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(class.source=’fold-show’)
+knitr::opts_chunk$set(collapse = TRUE)
+library...</p>
+  </article>
+</div>
+
+      
+    </div>
+    <a href="#page-title" class="back-to-top">Back to Top &uarr;</a>
+  </section>
+
+
+  </div>
+</div>
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+    
+      <li><a target="_blank" rel="noopener noreferrer" href="https://twitter.com/Barnabas_Daru"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+    
+    
+    
+    
+    
+    <li><a target="_blank" rel="noopener noreferrer" href="http://localhost:4000/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">
+  &copy; 2023 Biogeography and Macroecology 2023. <br>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

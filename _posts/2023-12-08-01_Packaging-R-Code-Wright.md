@@ -1,0 +1,195 @@
+---
+layout: posts
+title: Lesson 1 - Packaging R Code
+date: 2023-11-10
+type: post
+published: true
+author: April Wright
+status: publish
+classes: wide
+excerpt_separator: <!--more-->
+share: true
+header:
+  overlay_image: /assets/images/tulane.jpg
+  overlay_filter: 0.2
+excerpt: ""
+categories:
+- Updates
+image: /assets/images/tulane.jpg
+tags:
+  - link
+  - Post Formats
+---
+
+## Lesson 1 - Packaging R Code (Wright)
+
+# Objectives:
+
++ Be able to explain why put code in an R package.
++ Understand the parts of an R package. 
+
+## Why Put Code In a Package? 
+
+We're all busy, stressed-out people. Why should we put in the effort to package code, when we could be starting another project. Or collecting data on another paper? I'd argue that there are tree main points:
+
+- Reproducibility:  If a package is well-developed, you know the code works. If it's documented, you know who it works. 
+- Tidyness: Most R packages have a standard structure incorporating both documentation and testing. Everything in its right place, and a place for everything.
+- Collaboration: You are your most common collaborator. Who remembers what they had for breakfast? Documentation is a love letter to yourself. Whether it's for you to remember what you did, or so you don't get an email when a stressed-out grad student finds your package, using a standard infrastructure means people can find what they need.
+
+## RStudio and integrated tools for package building
+blogo
+File > New Project > R Package
+
+Choose to initialize a revision management repository with the package.
+
+When we do this in RStudio, R initializes a package. It was several components:
+
+- man: this is where documentation will live
+- .Rproj: this houses variables defined in the project
+- R: this is where R code and functions will live
+- Description: which specifies the metadata associated with the project.
+
+You can see that our package initialized with one function, `hello.R`. In it, you'll notice one function. If we type `Cmd + Shift + B`, this will build and install the package. Once we do this, we can call the `hello()` function. This also includes `hello()` into the standard R documentation system. If you type `?hello`, for example you will see the usual help window display.
+
+We can also Check or Test our package. Try `Cmd + Shift + E`. What is this output you see?
+
+How about `Cmd + Shift + T`? Right - we don't have a test directory yet!
+
+
+## Package Dissections
+
+Let's look briefly at an R package and see what one looks like under the hood. Instructors will walk through an R package of their own. 
+
+
+## Testing
+
+Now, we will return to our own package. We have one function, and no tests. People can mean different things when they say "testing". We will talk today about runtime testing, and unit testing.
+
+### Unit testing
+
+Unit tests can be thought of as automated checking to make sure your code works. For example, let's write a function that calculates the area of a square. Save it into your R folder, and rebuild the package. Run your function. Did it work? How do you know?
+
+Manually checking code works great for easy values. Any amount of complexity, though, rapidly descreases our ability to test by eye. Unit testing tests the code itself. Are you getting the expected output from a set of pre-defined in and outputs? If not, that could indicate a problem. Perhaps the interface to a function on which your code relies has changed, and now you're providing the wrong inputs. Or between versions, the default precision changes. You want to capture these changes to make sure you're on track.
+ 
+Let's start by making a `tests` folder. We'll use the R package `testthat` to write some tests. Make a subfolder called `testthat`. Type `testthat::` and use tab to cycle through the options. Are there any options that would be good for testing something about our calculation? The format of a test will look like this:
+
+```r
+
+test_that("Test square_calc(known data)", {
+  Condition 
+})
+```
+
+Let's make a quick function that squares a number. We'd like to know it works, eh? We could  check that we get the expected result, like so:
+
+```r
+square_calc <- function(x){
+  sq <- x*x
+  return(sq)
+}
+
+library(testthat)
+test_that("Test square_calc()", {
+  expect_equal(6.0025, square_calc(2.45)) 
+})
+```
+
+Discuss with a partner: 
+ + What types of conditions will cause this to fail? 
+ + Is this test robust to new datatypes? 
+ + When could you use such an inflexible test? 
+ + When can you not use such an inflexible test? 
+
+### Run Time Testing
+
+Where unit testing is about catching errors in the code, errors caused by dependency changes, and similar errors, runtime testing tests the behavior of the user and data. For example, if your method cannot handle missing data values, you need to make sure your user are not trying to use data with missing characters. Every run time check you write is an email you don't get later.
+
+What is something that could break our function? For example, my idea is to make sure the side of the square is a numeric type:
+
+```
+library(assertthat)
+
+ square_calc <- function(side_length){
+      side_length %has_attr% "numeric"
+       area <- side_length^2
+       return(area)
+   }
+```
+
+Try to break it! This is often referred to as a `precondition` - that is, if this is not true prior to the start of the function, the function will not execute. We can also test `post conditions`, which are attributes we need to be true at the end of the function.
+
+```
+library(assertthat)
+
+ square_calc <- function(side_length){
+      side_length %has_attr% "numeric"
+       area <- side_length^2
+       assert_that(sqrt(area) == side_length)
+       return(area)
+   }
+```
+
+We can also write our own error messages. Try the below with both object types:
+
+```r
+
+tree <- phytools::pbtree(n = 10)
+t <- c("a", "b", "c")
+
+if (!inherits(ENTER HERE, "phylo")){
+    stop("tree must be of class 'phylo'")
+  }
+
+```
+
+
+## Documentation
+
+Go ahead and open up the .R file for one of your. We'll now add some documentation. That typically takes this format:
+
+```
+#' Short description of what the function does.
+#'
+#' Longer description of what a function does. Do you need certain inputs? Specify them 
+#' here. Do you  calculate the likelihood of data given a specific formulation of a model? #' Let people know which here!
+#' 
+#' @param Inputs to function
+#' @export 
+```
+
+When you have written the documentation you would like to have, you can run 
+
+```r
+
+devtools::document()
+
+```
+
+This function will build manuals and online help pages (.Rd files) from your headers. These are important components of usable documentation!
+
+## Vignettes
+
+Create a directory called Vignettes, and an RMarkdown document within it. Let's walk through some core components of a tutorial.
+
+## Installation
+
+Once your package is on GitHub, it can be installed by others with either
+
+```r
+
+devtools::install_github("githubusername/Repo")
+
+# or
+
+remotes::install_github("githubusername/Repo")
+
+```
+
+
+## Getting Help with Packages
+
+One of the trickiest things about package development is a lot of the help we get as novices sort of falls away.
+
+[ROpenScience](https://devguide.ropensci.org/) has an R Package guide, which is chock full of wisdom, literate programming advice, and information on testing and other intermediate skills.
+They also operate a [forum](https://discuss.ropensci.org/) for developers, users, and other people who dig software, I guess? The culture of it is very collegial.
+
