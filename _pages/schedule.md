@@ -47,6 +47,9 @@ tags: []
 
 Course content is designed to be flexible to accommodate student interest and abilities.  
 
+### Etherpad of course notes:
+[Here](https://etherpad.wikimedia.org/p/d8WlwutuCEEI3R53Hf8a)
+
 ## Schedule
 
 | **Day and Time** | **Activity** | **Location** |
@@ -72,7 +75,7 @@ Course content is designed to be flexible to accommodate student interest and ab
 | **Wednesday Dec 13, 2023** | | |
 | 09:00 | BREAKFAST | Grab-and-Go food at TRC |
 | 09:30 | Open science and reproducible research | Tulane River Center |
-| 09:00 | Biogeographic data types | Tulane River Center |
+| 10:30 | Biogeographic data types | Tulane River Center |
 | 12:00 | LUNCH | Tulane River Center |
 | 14:00 | Biome evolution in R | Tulane River Center |
 | 15:00 | Your first R package | Tulane River Center |
