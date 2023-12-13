@@ -84,13 +84,13 @@ q <- d[, c("species", "decimalLongitude", "decimalLatitude")]
 names(q)[c(2,3)] <- c("lon", "lat")
 q <- q[!(q$species %in% ""),] |> unique() |> na.omit()
 length(unique(q$species)) # count the number of species = 699
-r <- q[q$lat>0,]
+pt <- q[q$lat>0,]
 ```
 
 We can plot the distribution for one of the species, White Oak (*Quercus alba*). Note: don't attempt to plot the entire dataset as it can freeze your computer.'
 
 ```r
-ex <- r[r$species %in% "Quercus alba", ]
+ex <- pt[pt$species %in% "Quercus alba", ]
 plot(ex$lon, ex$lat)
 ```
 Depending on the data source, an ultimate goal is to convert the distribution data to a community data frame across different sites and geographic extents for downstream analyses.
