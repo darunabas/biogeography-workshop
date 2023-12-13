@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-12-12T20:33:52-06:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Biogeography and Macroecology 2023</title><author><name>Biogeography and Macroecology 2023</name></author><entry><title type="html">Lesson 4 - Biogeographic data types</title><link href="http://localhost:4000/updates/02_Biogeographic-data-types/" rel="alternate" type="text/html" title="Lesson 4 - Biogeographic data types" /><published>2023-12-12T00:00:00-06:00</published><updated>2023-12-12T00:00:00-06:00</updated><id>http://localhost:4000/updates/02_Biogeographic-data-types</id><content type="html" xml:base="http://localhost:4000/updates/02_Biogeographic-data-types/">&lt;h2 id=&quot;lecture-4&quot;&gt;Lecture 4&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-12-12T20:40:13-06:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Biogeography and Macroecology 2023</title><author><name>Biogeography and Macroecology 2023</name></author><entry><title type="html">Lesson 4 - Biogeographic data types</title><link href="http://localhost:4000/updates/02_Biogeographic-data-types/" rel="alternate" type="text/html" title="Lesson 4 - Biogeographic data types" /><published>2023-12-12T00:00:00-06:00</published><updated>2023-12-12T00:00:00-06:00</updated><id>http://localhost:4000/updates/02_Biogeographic-data-types</id><content type="html" xml:base="http://localhost:4000/updates/02_Biogeographic-data-types/">&lt;h2 id=&quot;lecture-4&quot;&gt;Lecture 4&lt;/h2&gt;
 &lt;h2 id=&quot;methods-to-infer-biogeography-patternsprocesses&quot;&gt;Methods to infer biogeography patterns/processes&lt;/h2&gt;
 
 &lt;h3 id=&quot;fossils-eg-pollen&quot;&gt;Fossils (e.g., pollen)&lt;/h3&gt;
@@ -189,9 +188,6 @@ DNA sequences are aligned and used for phylogenetic reconstruction.&lt;/p&gt;
 Polygons can be derived from the International Union for the Conservation of Nature’s spatial database (https://www.iucnredlist.org/resources/spatial-data-download), published monographs or field guides that have been validated by taxonomic experts.&lt;/p&gt;
 
 &lt;p&gt;Next, we will convert the point occurrences to range polygons using the R package &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rangeBuilder&lt;/code&gt;. This will allow us to generate alpha hulls. We will then crop the alpha hulls to terrestrial areas by removing areas falling in the ocean.&lt;/p&gt;</content><author><name>Barnabas Daru</name></author><category term="Updates" /><category term="link" /><category term="Post Formats" /><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/tulane.jpg" /><media:content medium="image" url="http://localhost:4000/assets/images/tulane.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Lesson 2 - Tree structure</title><link href="http://localhost:4000/updates/02_Tree-structure/" rel="alternate" type="text/html" title="Lesson 2 - Tree structure" /><published>2023-12-08T00:00:00-06:00</published><updated>2023-12-08T00:00:00-06:00</updated><id>http://localhost:4000/updates/02_Tree-structure</id><content type="html" xml:base="http://localhost:4000/updates/02_Tree-structure/">&lt;h2 id=&quot;lecture-2&quot;&gt;Lecture 2&lt;/h2&gt;
-=======
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-12-11T15:10:25-06:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Biogeography and Macroecology 2023</title><author><name>Biogeography and Macroecology 2023</name></author><entry><title type="html">Lesson 2 - Tree structure</title><link href="http://localhost:4000/updates/02_Tree-structure/" rel="alternate" type="text/html" title="Lesson 2 - Tree structure" /><published>2023-12-08T00:00:00-06:00</published><updated>2023-12-08T00:00:00-06:00</updated><id>http://localhost:4000/updates/02_Tree-structure</id><content type="html" xml:base="http://localhost:4000/updates/02_Tree-structure/">&lt;h2 id=&quot;lecture-2&quot;&gt;Lecture 2&lt;/h2&gt;
->>>>>>> ed4cfbde6faeb125420f40314d547de10c69cff0
 
 &lt;div class=&quot;language-r highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;knitr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;opts_chunk&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;echo&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;TRUE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
 &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;knitr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;opts_chunk&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;class.source&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&apos;fold-show&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
@@ -810,4 +806,458 @@ File &amp;gt; New Project &amp;gt; R Package&lt;/p&gt;
 &lt;p&gt;One of the trickiest things about package development is a lot of the help we get as novices sort of falls away.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://devguide.ropensci.org/&quot;&gt;ROpenScience&lt;/a&gt; has an R Package guide, which is chock full of wisdom, literate programming advice, and information on testing and other intermediate skills.
-They also operate a &lt;a href=&quot;https://discuss.ropensci.org/&quot;&gt;forum&lt;/a&gt; for developers, users, and other people who dig software, I guess? The culture of it is very collegial.&lt;/p&gt;</content><author><name>April Wright</name></author><category term="Updates" /><category term="link" /><category term="Post Formats" /><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/tulane.jpg" /><media:content medium="image" url="http://localhost:4000/assets/images/tulane.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+They also operate a &lt;a href=&quot;https://discuss.ropensci.org/&quot;&gt;forum&lt;/a&gt; for developers, users, and other people who dig software, I guess? The culture of it is very collegial.&lt;/p&gt;</content><author><name>April Wright</name></author><category term="Updates" /><category term="link" /><category term="Post Formats" /><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/tulane.jpg" /><media:content medium="image" url="http://localhost:4000/assets/images/tulane.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Tree structure</title><link href="http://localhost:4000/03-RPhylo/" rel="alternate" type="text/html" title="Tree structure" /><published>2019-10-27T00:00:00-05:00</published><updated>2019-10-27T00:00:00-05:00</updated><id>http://localhost:4000/03-RPhylo</id><content type="html" xml:base="http://localhost:4000/03-RPhylo/">&lt;p&gt;```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(class.source=’fold-show’)
+knitr::opts_chunk$set(collapse = TRUE)
+library(phangorn)
+nr_desc &amp;lt;-  function(x){
+    x &amp;lt;- reorder(x, “postorder”)
+    res &amp;lt;- numeric(max(x$edge))
+    res[1:Ntip(x)] = 1L
+    for(i in 1:nrow(x$edge)){
+        tmp = x$edge[i,1]
+        res[tmp] =  res[tmp] + res[x$edge[i,2] ]
+    }
+    res
+}&lt;/p&gt;
+
+&lt;p&gt;root_to_tip &amp;lt;-  function(x){
+    x &amp;lt;- reorder(x)
+    res &amp;lt;- numeric(max(x$edge))
+    for(i in 1:nrow(x$edge)){
+        pa &amp;lt;- x$edge[i,1]
+        ch &amp;lt;- x$edge[i,2]      &lt;br /&gt;
+        res[ch] =  res[pa] + x$edge.length[i]
+    }
+    res
+}&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+## Concepts today
+
++ How is a phylogenetic tree stored in R? 
++ How can we traverse a tree to see and manipulate nodes and branches? 
++ What are some major packages and key functions in the R computing environment? 
++ Beyond the tree: What are some important packages that implement comparative methods, biogeography, and visualization? 
+
+
+## A brief history of phylogenetics in R
+
+1993: first release of R
+
+1996: Ihaka &amp;amp; Gentleman, J. Comput. Graph. Statist., 5: 299–314
+
+2000: R 1.0.0
+
+2001: start the development of ape 
+
+2002: first release of ape
+
+2008: first release of phangorn
+
+2019: 260 packages depending on ape on CRAN, 16 on BioConductor (and 100’s elsewhere: R-Forge, GitHub, . . .)
+
+
+## Getting help
+
+So many functions, but how to find/remember them?
+
+* write scripts (and maintain them!)
+* help.start()
+* ?... (or help(&quot;...&quot;))
+* apropos(&quot;...&quot;)
+* use TAB-completion (or a &quot;cool&quot; editor)
+
+Operators are also functions:
+```{r}
+`+` # or get(&quot;+&quot;)
+`+`(1, 2)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Find generic functions for a class&lt;/p&gt;
+
+&lt;p&gt;Common generic functions are print, plot, c, summary, anova, [, …&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-{r}&quot;&gt;library(ape)
+methods(class=&quot;phylo&quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Run all examples of the help files!
+```{r eval=FALSE}
+example(plot.phylo)&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;However examples in (CRAN) R packages are not allowed to run longer than 5 seconds. So for inference this results frequently in toy examples. You need to change to higher number of bootstrap iterations, change stop criterion for optimisation et cetera.  
+
+
+Many packages on CRAN and all on Bioconductor come with vignettes.
+```{r eval=FALSE}
+vignette()
+vignette(package=&quot;phangorn&quot;)
+vignette(&quot;Trees&quot;, package=&quot;phangorn&quot;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;And there is google and stackoverflow.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-phylo-class&quot;&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;phylo&lt;/code&gt; class&lt;/h2&gt;
+
+&lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;phylo&lt;/code&gt; class is a tree structure in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ape&lt;/code&gt; are the standard for storing phylogenetic in R. It is also used in more than 260 packages on CRAN.&lt;/p&gt;
+
+&lt;p&gt;This class represents phylogenetic trees and networks; (internal) nodes are of
+degree ≥ 2; the tips (terminal nodes) are of degree 1. The tip labels may be
+replicated (or can even missing). Idem for the node labels (which are optional).&lt;/p&gt;
+
+&lt;h2 id=&quot;structure-of-phylo-objects&quot;&gt;Structure of phylo objects&lt;/h2&gt;
+
+&lt;p&gt;An object of class &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;phylo&lt;/code&gt; is a list containing at least the following objects:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;An &lt;em&gt;integer&lt;/em&gt; matrix named edge with two columns and as many rows as there are edges in the tree.&lt;/li&gt;
+  &lt;li&gt;A &lt;em&gt;character&lt;/em&gt; vector named &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tip.label&lt;/code&gt;, can be “”.&lt;/li&gt;
+  &lt;li&gt;An &lt;em&gt;integer&lt;/em&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Nnode&lt;/code&gt; with the number of internal nodes.&lt;/li&gt;
+  &lt;li&gt;A class attribute &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;phylo&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-{r}&quot;&gt;library(ape)
+tree &amp;lt;- read.tree(text = &quot;(,(,));&quot;)
+plot(tree)
+nodelabels()
+tiplabels()
+str(tree)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The storage mode is important. Saving a vector of integers saves memory in comparison to vector of doubles. 
+Also objects of class &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;phylo&lt;/code&gt; often in C-Code so you need to take care of this.&lt;/p&gt;
+
+&lt;p&gt;Also comparing doubles is dangerous:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-{r}&quot;&gt;x &amp;lt;- 3
+y &amp;lt;- sqrt(3)^2
+x==y
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In the edge matrix each edge (branch) is coded by the nodes it connects.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-{r}&quot;&gt;tree$edge
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Tips (terminal nodes, leaves, labels, …) are numbered from 1 to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;n&lt;/code&gt;, where &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;n&lt;/code&gt; is the number of tips. The root is numbered &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;n+1&lt;/code&gt;. The ancestral node (closer to the root) is always on the lefthand column.&lt;/p&gt;
+
+&lt;p&gt;Some important properties and observations:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;the first column only contains values greater than &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;n&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;all nodes, but the root, appear exactly once in the second column.&lt;/li&gt;
+  &lt;li&gt;in a strictly bifurcating tree, all nodes greater then &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;n&lt;/code&gt; appear twice and the root node &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;n+1&lt;/code&gt;, in case of ‘twice’ for rooted and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;trice&lt;/code&gt; for unrooted trees.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;So we can start and construct a minimal tree ourselves:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-{r}&quot;&gt;library(ape)
+simple_tree &amp;lt;- structure(list(edge = matrix(c(3L, 3L, 1L, 2L), 2, 2), 
+                        tip.label = c(&quot;t1&quot;, &quot;t2&quot;), Nnode = 1L), class = &quot;phylo&quot;)
+plot(simple_tree)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;A &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;phylo&lt;/code&gt; object always contains an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;edge&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tip.label&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Nnode&lt;/code&gt;. Often a phylo object contains some of the following elements:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;a &lt;em&gt;numeric&lt;/em&gt; vector &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;edge.length&lt;/code&gt;. The length of the vector is number of rows of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;edge&lt;/code&gt; matrix and the order corresponds to the rows in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;edge&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;a &lt;em&gt;character&lt;/em&gt; vector &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;node.labels&lt;/code&gt; of length &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Nnode&lt;/code&gt;. The node labels are labeled from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;n+1&lt;/code&gt; to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;n+Nnode&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;A single &lt;em&gt;numeric&lt;/em&gt; root.edge providing the edge length at the root.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Additionally most &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;phylo&lt;/code&gt; objects have an attribute &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;order&lt;/code&gt;, which can be either “cladewise”, “postorder” or “pruningwise”.&lt;/p&gt;
+
+&lt;h2 id=&quot;tree-traversal&quot;&gt;Tree traversal&lt;/h2&gt;
+
+&lt;p&gt;Tree traversal in ape is implemented iterative in contrast to the recursive implementation in most other phylogenetic programs.&lt;/p&gt;
+
+&lt;h3 id=&quot;preorder-tree-traversal&quot;&gt;Preorder tree traversal&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Preorder tree traversal&lt;/em&gt; is travelling through the tree from the root to the tips visiting always the all nodes the right subtree before visiting the right subtree.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-{r}&quot;&gt;tree &amp;lt;- rtree(5)
+plot(tree, show.tip.label = FALSE)
+nodelabels()
+tiplabels()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-{r}&quot;&gt;reorder(tree, &quot;cladewise&quot;)$edge
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;postorder-tree-traversal&quot;&gt;Postorder tree traversal&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Postorder tree traversal&lt;/em&gt; travels through the tree from the tips through the root. All the descendent nodes need to be visited before the ancestral node.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-{r}&quot;&gt;reorder(tree, &quot;postorder&quot;)$edge
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Defining the order of the traversal of the tree this way allows to iterate just through the tree. Reorder not only changes the order of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;edge&lt;/code&gt; matrix, but also of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;edge.length&lt;/code&gt; if it exists.&lt;/p&gt;
+
+&lt;p&gt;###Excercise 1:
+Write a function which counts how many descendants each node has. 
+The output should look like:
+```{r, echo=TRUE}
+set.seed(42)
+tree &amp;lt;- rtree(5)&lt;/p&gt;
+
+&lt;p&gt;plot(tree, show.tip.label = FALSE)
+nodelabels()
+tiplabels()
+nr_desc(tree)&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+
+My solutions
+```{r class.source = NULL}
+library(phangorn)
+nr_desc_cheat &amp;lt;- function(x){
+  lengths(Descendants(x, 1:max(x$edge)))
+} 
+
+
+nr_desc &amp;lt;-  function(x){
+    x &amp;lt;- reorder(x, &quot;postorder&quot;)
+    res &amp;lt;- numeric(max(x$edge))
+    res[1:Ntip(x)] = 1L
+    for(i in 1:nrow(x$edge)){
+        tmp = x$edge[i,1]
+        res[tmp] =  res[tmp] + res[x$edge[i,2] ]
+    }
+    res
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;###Excercise 2:
+Write a function which computes the distance from each node to the root.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-{r}&quot;&gt;tree$edge.length[] &amp;lt;- 1
+root_to_tip(tree)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;My solution:
+```{r class.source = NULL}
+root_to_tip &amp;lt;-  function(x){
+    x &amp;lt;- reorder(x)
+    res &amp;lt;- numeric(max(x$edge))
+    for(i in 1:nrow(x$edge)){
+        pa &amp;lt;- x$edge[i,1]
+        ch &amp;lt;- x$edge[i,2]      &lt;br /&gt;
+        res[ch] =  res[pa] + x$edge.length[i]
+    }
+    res
+}&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+
+## The &apos;multiPhylo&apos; class
+
+An object of class &apos;multiPhylo&apos; is a list of of several trees each of class 
+&apos;phylo&apos;. If all trees share the same tip labels, as in bootstrap samples or from
+MCMC analyses, trees can be saved in a memory efficient way storing the labels
+only once in an attribute *TipLabel*. 
+ 
+```{r}
+trees &amp;lt;- rmtree(1000, 100)
+trees
+attr(trees, &quot;TipLabel&quot;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-{r}&quot;&gt;trees_compact &amp;lt;- .compressTipLabel(trees)
+attr(trees_compact, &quot;TipLabel&quot;)
+
+object.size(trees) / object.size(trees_compact)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Switching between the two representations can be done via ‘.compressTipLabel’ and ‘.uncompressTipLabel’.&lt;/p&gt;
+
+&lt;h2 id=&quot;importing-and-exporting-trees-and-networks&quot;&gt;Importing and exporting trees and networks&lt;/h2&gt;
+
+&lt;p&gt;Package &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ape&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;phangorn&lt;/code&gt; contains functions to import trees and splits
+networks:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;read.tree&lt;/code&gt; Newick files&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;read.nexus&lt;/code&gt; NEXUS files (only trees)&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;read.evonet&lt;/code&gt; networks in extended Newick format&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;and&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;write.tree&lt;/code&gt; Newick (one or several trees)&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;write.nexus&lt;/code&gt; NEXUS (one or several trees with or without translate block)&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;write.evonet&lt;/code&gt; extended Newick (.nhx)&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;read.networx&lt;/code&gt; phylogenetic splits networks in nexus format (e.g. Splitstree)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;example&quot;&gt;Example:&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-{r}&quot;&gt;write.tree(tree, &quot;example_tree.nex&quot;) 
+tree_read &amp;lt;- read.tree(file = &quot;example_tree.nex&quot;)
+plot(tree_read)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Any R object(s) can be saved on disk: this is much better if these data are used
+only in R. (*Faster to read/write, smaller files, and no loss of numerical accuracy.)
+Several objects:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;save(X, a, y, file = &quot;X.rda&quot;)&lt;/code&gt; several objects with their names&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;load(&quot;X.rda&quot;)&lt;/code&gt; $\rightarrow$ restores object names (i.e., possibly deletes previous
+X, a, y in the workspace)
+A single object:&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;saveRDS(X, file = &quot;X.rds&quot;)&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Y &amp;lt;- readRDS(&quot;X.rds&quot;)&lt;/code&gt; $\rightarrow$ the name of the object can be changed&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;functions-for-phylo-objects&quot;&gt;Functions for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;phylo&lt;/code&gt; objects&lt;/h2&gt;
+
+&lt;p&gt;Before you write a function look what’s already out there.&lt;/p&gt;
+
+&lt;h3 id=&quot;some-convenience-functions&quot;&gt;Some convenience functions&lt;/h3&gt;
+&lt;p&gt;There are several convenience functions to achieve common tasks:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Operation&lt;/th&gt;
+      &lt;th&gt;High level&lt;/th&gt;
+      &lt;th&gt;Low level&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;How many tips?&lt;/td&gt;
+      &lt;td&gt;Ntip(tr)&lt;/td&gt;
+      &lt;td&gt;length(tr$tip.label)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;How many node?&lt;/td&gt;
+      &lt;td&gt;Nnode(tr)&lt;/td&gt;
+      &lt;td&gt;tr$Nnode&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;How many edges?&lt;/td&gt;
+      &lt;td&gt;Nedge(tr)&lt;/td&gt;
+      &lt;td&gt;nrow(tr$edge)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;What are the ancestor of x&lt;/td&gt;
+      &lt;td&gt;Ancestors(tr, x, “parent”)&lt;/td&gt;
+      &lt;td&gt;tr$edge[tr$edge[,2]==x , 1]&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;What are the descendants of x&lt;/td&gt;
+      &lt;td&gt;Descendants(tr, x, “children”)&lt;/td&gt;
+      &lt;td&gt;tr$edge[tr$edge[,1]==x , 2]&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Ntip, Nnode, Nedge are generic and work on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;phylo&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;multiPhylo&lt;/code&gt; objects. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ancestors&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Descendants&lt;/code&gt; are vectorized , i.e. argument node can be a vector.&lt;/p&gt;
+
+&lt;h2 id=&quot;some-useful-functions-to-modify-trees&quot;&gt;Some useful functions to modify trees&lt;/h2&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;root(phy, outgroup, ...)&lt;/code&gt;, 
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;unroot(phy)&lt;/code&gt;, 
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;midpoint(tree)&lt;/code&gt;,
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;drop.tip(phy, tip, ...)&lt;/code&gt;, 
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;keep.tip(phy, tip)&lt;/code&gt;, 
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;extract.clade(phy, node, ...)&lt;/code&gt;, 
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bind.tree(x, y, ...)&lt;/code&gt;,
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;c(...)&lt;/code&gt;, 
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;multi2di(phy, random = TRUE)&lt;/code&gt;, 
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;di2multi(phy, tol = 1e-8)&lt;/code&gt;, 
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rotate(phy, node)&lt;/code&gt;, 
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rotateConstr(phy, X)&lt;/code&gt;, 
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;reorder(phy, order = &quot;cladewise&quot;)&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Some of the above functions have the option interactive (FALSE by default) and many are generic.&lt;/p&gt;
+
+&lt;p&gt;And some functions to explore the Baumraum (tree space)
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;nni&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rNNI&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rSPR&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;allTrees&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;comparative-methods-and-biogeography&quot;&gt;Comparative Methods and Biogeography&lt;/h2&gt;
+
+&lt;p&gt;We usually don’t simply stop when we have the tree. We often want to do some downstream analsyses using that phylogeny. This, in fact, is the whole point of the workshop. Broadly, phylogenetic comparative methods typically cluster into discrete and continuous trait methods. Continuous trait methods are for traits that can’t be broken into discrete units. This often includes weights, measurements, and ratios. Discrete traits are, as the name implies, able to be broken down into discrete units. Biogeography often falls into this classification.&lt;/p&gt;
+
+&lt;p&gt;Both continuous and discrete trait methods (including biogeography) will typically use a model of evolution to trace a character from the tips of a tree to the root. As an example, let’s a take a quick look at an ancestral state estimation.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-{r}&quot;&gt;library(geiger)
+q &amp;lt;- list(rbind(c(-.5, .5), c(.5, -.5)))
+
+trait &amp;lt;- geiger::sim.char(tree, par = q, model = &quot;discrete&quot;, n=1)
+fit &amp;lt;- ace(trait, tree, type = &quot;discrete&quot;, model = &quot;ER&quot;)
+fit
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Let’s walk through this output:&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Log-likelihood&lt;/em&gt; is the likelihood of the data given the Equal-Rates model. The equal rates model can be seen right below - this model says that you are equally likely to go from a state 1 to a state 2 as vice versa - some of you may know this as the Mk model of Lewis (2001) or the Jukes-Cantor model (1969). 
+&lt;em&gt;Scaled likelihoods at the root&lt;/em&gt; is the likelihood of a state 1 or 2 at the root. We see these are nearly equivalent. Look at the tree - why should this be?&lt;/p&gt;
+
+&lt;p&gt;Before we visualize this, we’re going to install one more R Package that we didn’t install prior to the workshop. Many, if not most, R packages are available via CRAN, which is a central packaging repository. However, others are available on GitHub. There are also alternative R package repositories, such as BioConductor. This is where ggtree lives. We will now install it:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-{r}&quot;&gt;if (!require(&quot;BiocManager&quot;, quietly = TRUE))
+    install.packages(&quot;BiocManager&quot;)
+
+BiocManager::install(&quot;ggtree&quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;With ggtree installed, let’s make some pretty graphics.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-{r}&quot;&gt;library(ggtree)
+
+plot &amp;lt;- ace(trait, tree, type = &quot;discrete&quot;, model = &quot;ER&quot;)
+
+plot(tree, cex = 0.5, adj = c(0.2), type = &quot;fan&quot;, 
+     no.margin = TRUE, show.tip.label = FALSE)
+tiplabels(pch = 16, col = c( &quot;lightblue&quot;,
+               &quot;chocolate&quot;))
+nodelabels(pie = fit$lik.anc, cex = 0.5)
+legend(&quot;bottomleft&quot;, pch = 15, bty = &quot;n&quot;,
+       legend = c(&quot;0&quot;, &quot;1&quot;), 
+       col = c( &quot;lightblue&quot;,
+               &quot;chocolate&quot;))
+               
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Some of the earliest ways of mapping biogeography to trees were based on parsimony. In the time since, it became common to use methods like the above, while treating a landmas as a discrete state, finally, newer models, such as DEC, became more common to use for biogeography. Let’s grab a dataset and take a ramble through some of these methods.&lt;/p&gt;
+
+&lt;p&gt;First, we’ll simulate a tree:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-{r}&quot;&gt;
+big_tree &amp;lt;- rtree(45)
+big_tree
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rtree&lt;/code&gt; as a function simulates a random tree. Now let’s add some data to it. This time, we will simulate a tree using a method called “All Rates Different.” Unlike the Mk model or the Jukes-Cantor, this implies that the transition rates are all different between possible character states.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-{r}&quot;&gt;library(geiger)
+
+geo &amp;lt;- rTraitDisc(big_tree, &quot;ARD&quot;, rate = c(0.1, 0.2))
+fit &amp;lt;- ace(geo, big_tree, type = &quot;discrete&quot;, model = &quot;ER&quot;)
+fit
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;exercise&quot;&gt;Exercise:&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Try and plot the data from above to a tree.&lt;/li&gt;
+  &lt;li&gt;What did we do wrong when we fit the trait model above?
+    &lt;ul&gt;
+      &lt;li&gt;Can you fix it?&lt;/li&gt;
+      &lt;li&gt;How do you know that you’ve done something better by fixing it? What in this output suggests this?&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;When you plot an ARD tree, how does it differ from the ER tree?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;## Explicitly biogeographic models&lt;/p&gt;
+
+&lt;p&gt;The above is useful. However, we may want models with parameters that actually carry biogeographic meaning. The most common and well-used of these is the DEC model, standing for Dispersal-Extirpation-Cladogenesis. The idea of this is that a lineage could be dispersing, being removed from an area, or speciating. Described by Ree in 2005, this has gone on to be one of the more popular approaches to understanding phylogeography in deep time. R methods for doing this have fallen apart in the past few years. If there is interest, I’m happy to run this in RevBayes later this week.&lt;/p&gt;
+
+&lt;h1 id=&quot;references&quot;&gt;References&lt;/h1&gt;
+
+&lt;p&gt;Jukes T.H., Cantor C.R. 1969. Evolution of Protein Molecules. Mammalian Protein Metabolism. 3:21–132. 10.1016/B978-1-4832-3211-9.50009-7
+Lewis P.O. 2001. A Likelihood Approach to Estimating Phylogeny from Discrete Morphological Character Data. Systematic Biology. 50:913–925. 10.1080/106351501753462876&lt;/p&gt;
+
+&lt;p&gt;Paradis E. (2012) Definition of Formats for Coding Phylogenetic Trees in R &lt;a href=&quot;http://ape-package.ird.fr/misc/FormatTreeR_24Oct2012.pdf&quot;&gt;url&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Paradis E. (2012) Analysis of Phylogenetics and Evolution with R, 2nd ed., Springer, New York&lt;/p&gt;
+
+&lt;p&gt;Paradis E. &amp;amp; Schliep K. (2019) ape 5.0: an environment for modern phylogenetics and evolutionary analyses in R, Bioinformatics 35 (3), 526-528&lt;/p&gt;
+
+&lt;p&gt;Ree R.H., Moore B.R., Webb C.O., Donoghue M.J., Crandall K. 2005. A likelihood framework for inferring the evolution of geographic range on phylogenetic trees. Evolution. 59:2299–2311. 10.1111/j.0014-3820.2005.tb00940.x&lt;/p&gt;
+
+&lt;p&gt;Schliep K.P. 2011. phangorn: phylogenetic analysis in R. Bioinformatics, 27(4) 592-593&lt;/p&gt;</content><author><name>Klaus Schliep, April Wright</name></author><summary type="html">```{r setup, include=FALSE} knitr::opts_chunk$set(echo = TRUE) knitr::opts_chunk$set(class.source=’fold-show’) knitr::opts_chunk$set(collapse = TRUE) library(phangorn) nr_desc &amp;lt;- function(x){ x &amp;lt;- reorder(x, “postorder”) res &amp;lt;- numeric(max(x$edge)) res[1:Ntip(x)] = 1L for(i in 1:nrow(x$edge)){ tmp = x$edge[i,1] res[tmp] = res[tmp] + res[x$edge[i,2] ] } res }</summary></entry></feed>
