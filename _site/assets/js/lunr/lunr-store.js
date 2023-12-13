@@ -22,4 +22,10 @@ var store = [{
         "tags": ["link","Post Formats"],
         "url": "/updates/02_Biogeographic-data-types/",
         "teaser": null
+      },{
+        "title": "Lesson 5 - Biome evolution",
+        "excerpt":"Lecture 5 Geographic range evolution/biome evolution A central theme of biogeography is to reconstruct ancestral distributions of biotas over evolutionary time scales to understand the processes by which biotas arose and how they may evolve in the future. Understanding how biodiversity evolved can inform modeling of the past, present and...","categories": ["Updates"],
+        "tags": ["link","Post Formats"],
+        "url": "/updates/02_Biome-evolution/",
+        "teaser": null
       }]
