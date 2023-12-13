@@ -133,8 +133,35 @@ tr1 <- keep.tip(tr, index)
 
 pbc <- phylobeta(mydat, tr, index.family = "sorensen")
 ```
-The `phyloregion` package provides functions for analysis of compositional turnover (beta diversity) based on widely used dissimilarity indices such as Simpson, Sorensen and Jaccard. The phyloregion's functions beta_diss and phylobeta compute efficiently the pairwise dissimilarity matrices for large sparse community matrices and phylogenetic trees for taxonomic and phylogenetic
-turnover respectively. The results are stored as distance objects for
-downstream analyses.'
+The `phyloregion` package provides functions for analysis of compositional turnover (beta diversity) based on widely used dissimilarity indices such as Simpson, Sorensen and Jaccard. The phyloregion's functions `beta_diss` and `phylobeta` compute pairwise dissimilarity matrices for large sparse community matrices and phylogenetic trees for taxonomic and phylogenetic turnover respectively. The results are stored as distance objects for downstream analyses.
+
+### Step 1: Selecting cluster algorithms
+We will use the  the function `select_linkage` to contrast eight hierarchical clustering algorithms (including UPGMA) on the (phylogenetic) beta diversity matrix for degree of data distortion using cophenetic correlation coefficient. The
+cophenetic correlation coefficient measures how the original pairwise distance matrix is represented by the dendrogram. 
+
+```r
+y <- select_linkage(pbc[[1]])
+barplot(y, horiz = TRUE, las = 1)
+```
+### Step 2: Calculating optimal number of clusters
+The `optimal_phyloregion` function computes the ‘elbow’ (also known as ‘knee’), i.e., the point of maximum curvature, to determine the optimal number of clusters that best describes the observed (phylogenetic) beta diversity matrix.
+
+```r
+(d <- optimal_phyloregion(pbc[[1]], k=15))
+plot(d$df$k, d$df$ev, ylab = "Explained variances",
+     xlab = "Number of clusters")
+lines(d$df$k[order(d$df$k)], d$df$ev[order(d$df$k)], pch = 1)
+points(d$optimal$k, d$optimal$ev, pch = 21, bg = "red", cex = 3)
+points(d$optimal$k, d$optimal$ev, pch = 21, bg = "red", type = "h")
+``` 
+
+### Step 3: Evolutionary distinctiveness of phyloregions
+The function `phyloregion` estimates evolutionary distinctiveness
+of each phyloregion by computing the mean value of (phylogenetic) beta diversity between a focal phyloregion and all other phyloregions in the study area. 
+
+```r
+zz <- phyloregion(pbc[[1]], pol = my_grids)
+```
+
 
 

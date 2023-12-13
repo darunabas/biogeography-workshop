@@ -190,7 +190,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          3 minute read
+          4 minute read
         
       </span>
     
@@ -337,9 +337,32 @@
 
 </span><span class="n">pbc</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">phylobeta</span><span class="p">(</span><span class="n">mydat</span><span class="p">,</span><span class="w"> </span><span class="n">tr</span><span class="p">,</span><span class="w"> </span><span class="n">index.family</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"sorensen"</span><span class="p">)</span><span class="w">
 </span></code></pre></div></div>
-<p>The <code class="language-plaintext highlighter-rouge">phyloregion</code> package provides functions for analysis of compositional turnover (beta diversity) based on widely used dissimilarity indices such as Simpson, Sorensen and Jaccard. The phyloregion’s functions beta_diss and phylobeta compute efficiently the pairwise dissimilarity matrices for large sparse community matrices and phylogenetic trees for taxonomic and phylogenetic
-turnover respectively. The results are stored as distance objects for
-downstream analyses.’</p>
+<p>The <code class="language-plaintext highlighter-rouge">phyloregion</code> package provides functions for analysis of compositional turnover (beta diversity) based on widely used dissimilarity indices such as Simpson, Sorensen and Jaccard. The phyloregion’s functions <code class="language-plaintext highlighter-rouge">beta_diss</code> and <code class="language-plaintext highlighter-rouge">phylobeta</code> compute pairwise dissimilarity matrices for large sparse community matrices and phylogenetic trees for taxonomic and phylogenetic turnover respectively. The results are stored as distance objects for downstream analyses.</p>
+
+<h3 id="step-1-selecting-cluster-algorithms">Step 1: Selecting cluster algorithms</h3>
+<p>We will use the  the function <code class="language-plaintext highlighter-rouge">select_linkage</code> to contrast eight hierarchical clustering algorithms (including UPGMA) on the (phylogenetic) beta diversity matrix for degree of data distortion using cophenetic correlation coefficient. The
+cophenetic correlation coefficient measures how the original pairwise distance matrix is represented by the dendrogram.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">y</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">select_linkage</span><span class="p">(</span><span class="n">pbc</span><span class="p">[[</span><span class="m">1</span><span class="p">]])</span><span class="w">
+</span><span class="n">barplot</span><span class="p">(</span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="n">horiz</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">,</span><span class="w"> </span><span class="n">las</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+<h3 id="step-2-calculating-optimal-number-of-clusters">Step 2: Calculating optimal number of clusters</h3>
+<p>The <code class="language-plaintext highlighter-rouge">optimal_phyloregion</code> function computes the ‘elbow’ (also known as ‘knee’), i.e., the point of maximum curvature, to determine the optimal number of clusters that best describes the observed (phylogenetic) beta diversity matrix.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">(</span><span class="n">d</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">optimal_phyloregion</span><span class="p">(</span><span class="n">pbc</span><span class="p">[[</span><span class="m">1</span><span class="p">]],</span><span class="w"> </span><span class="n">k</span><span class="o">=</span><span class="m">15</span><span class="p">))</span><span class="w">
+</span><span class="n">plot</span><span class="p">(</span><span class="n">d</span><span class="o">$</span><span class="n">df</span><span class="o">$</span><span class="n">k</span><span class="p">,</span><span class="w"> </span><span class="n">d</span><span class="o">$</span><span class="n">df</span><span class="o">$</span><span class="n">ev</span><span class="p">,</span><span class="w"> </span><span class="n">ylab</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Explained variances"</span><span class="p">,</span><span class="w">
+     </span><span class="n">xlab</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Number of clusters"</span><span class="p">)</span><span class="w">
+</span><span class="n">lines</span><span class="p">(</span><span class="n">d</span><span class="o">$</span><span class="n">df</span><span class="o">$</span><span class="n">k</span><span class="p">[</span><span class="n">order</span><span class="p">(</span><span class="n">d</span><span class="o">$</span><span class="n">df</span><span class="o">$</span><span class="n">k</span><span class="p">)],</span><span class="w"> </span><span class="n">d</span><span class="o">$</span><span class="n">df</span><span class="o">$</span><span class="n">ev</span><span class="p">[</span><span class="n">order</span><span class="p">(</span><span class="n">d</span><span class="o">$</span><span class="n">df</span><span class="o">$</span><span class="n">k</span><span class="p">)],</span><span class="w"> </span><span class="n">pch</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="p">)</span><span class="w">
+</span><span class="n">points</span><span class="p">(</span><span class="n">d</span><span class="o">$</span><span class="n">optimal</span><span class="o">$</span><span class="n">k</span><span class="p">,</span><span class="w"> </span><span class="n">d</span><span class="o">$</span><span class="n">optimal</span><span class="o">$</span><span class="n">ev</span><span class="p">,</span><span class="w"> </span><span class="n">pch</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">21</span><span class="p">,</span><span class="w"> </span><span class="n">bg</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"red"</span><span class="p">,</span><span class="w"> </span><span class="n">cex</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">3</span><span class="p">)</span><span class="w">
+</span><span class="n">points</span><span class="p">(</span><span class="n">d</span><span class="o">$</span><span class="n">optimal</span><span class="o">$</span><span class="n">k</span><span class="p">,</span><span class="w"> </span><span class="n">d</span><span class="o">$</span><span class="n">optimal</span><span class="o">$</span><span class="n">ev</span><span class="p">,</span><span class="w"> </span><span class="n">pch</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">21</span><span class="p">,</span><span class="w"> </span><span class="n">bg</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"red"</span><span class="p">,</span><span class="w"> </span><span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"h"</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="step-3-evolutionary-distinctiveness-of-phyloregions">Step 3: Evolutionary distinctiveness of phyloregions</h3>
+<p>The function <code class="language-plaintext highlighter-rouge">phyloregion</code> estimates evolutionary distinctiveness
+of each phyloregion by computing the mean value of (phylogenetic) beta diversity between a focal phyloregion and all other phyloregions in the study area.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">zz</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">phyloregion</span><span class="p">(</span><span class="n">pbc</span><span class="p">[[</span><span class="m">1</span><span class="p">]],</span><span class="w"> </span><span class="n">pol</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">my_grids</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
 
 
 
@@ -394,7 +417,7 @@ downstream analyses.’</p>
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          3 minute read
+          4 minute read
         
       </span>
     
