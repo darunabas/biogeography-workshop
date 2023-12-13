@@ -16,4 +16,10 @@ var store = [{
         "tags": ["link","Post Formats"],
         "url": "/updates/02_Tree-structure/",
         "teaser": null
+      },{
+        "title": "Lesson 4 - Biogeographic data types",
+        "excerpt":"Lecture 4 Methods to infer biogeography patterns/processes Fossils (e.g., pollen) Paleoenvironments Pollen records Dating DNA/molecular Phylogenetic trees Ancestral area reconstruction Extinction Speciation Dispersal Species occurrences GBIF Point records Raster layers Range polygons Fossil data Biogeographers study fossils to learn about past geological events, climates, and evolution. Fossils are preserved remains...","categories": ["Updates"],
+        "tags": ["link","Post Formats"],
+        "url": "/updates/02_Biogeographic-data-types/",
+        "teaser": null
       }]
