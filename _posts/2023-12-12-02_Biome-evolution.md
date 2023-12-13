@@ -24,6 +24,8 @@ tags:
 ## Lecture 5
 ## Geographic range evolution/biome evolution
 
+Please download the data for this lesson at: [Quercus_datasets](/assets/images/Quercus_datasets.zip)
+
 A central theme of biogeography is to reconstruct ancestral distributions of biotas over evolutionary time scales to understand the processes by which biotas arose and how they may evolve in the future. Understanding how biodiversity evolved can inform modeling of the past, present and future of that biodiversity and can aid in:
 + design of protected areas that take into account diverse evolutionary processes, or 
 + the definition of how climate change may affect the future availability of resources.

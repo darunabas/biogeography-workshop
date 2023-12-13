@@ -24,7 +24,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Lesson 5 - Biome evolution",
-        "excerpt":"Lecture 5 Geographic range evolution/biome evolution A central theme of biogeography is to reconstruct ancestral distributions of biotas over evolutionary time scales to understand the processes by which biotas arose and how they may evolve in the future. Understanding how biodiversity evolved can inform modeling of the past, present and...","categories": ["Updates"],
+        "excerpt":"Lecture 5 Geographic range evolution/biome evolution Please download the data for this lesson at: Quercus_datasets A central theme of biogeography is to reconstruct ancestral distributions of biotas over evolutionary time scales to understand the processes by which biotas arose and how they may evolve in the future. Understanding how biodiversity...","categories": ["Updates"],
         "tags": ["link","Post Formats"],
         "url": "/updates/02_Biome-evolution/",
         "teaser": null
