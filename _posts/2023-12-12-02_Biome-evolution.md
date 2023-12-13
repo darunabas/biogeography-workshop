@@ -81,7 +81,7 @@ mylong2sparse <- function(x, grids = "grids", species = "species") {
   res
 }
 
-u <- "/Users/bdaru/Dropbox/Projects/Stanford/Daru_grants/2023/06_NSF-R package/WORKSHOP/Year3_New-Orleans/LectureNotes/Quercus_datasets/"
+u <- "Quercus_datasets/"
 g <- vect(paste0(u, "USA_vector_polygon/States_shapefile.shp"))
 g <- g[!(g$State_Name %in% c("ALASKA", "HAWAII")), ]
 tr <- read.tree(paste0(u,"phylogeny/quercus_phylogeny.tre"))
