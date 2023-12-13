@@ -217,3 +217,108 @@ Polygons can be derived from the International Union for the Conservation of Nat
 
 Next, we will convert the point occurrences to range polygons using the R package `rangeBuilder`. This will allow us to generate alpha hulls. We will then crop the alpha hulls to terrestrial areas by removing areas falling in the ocean.
 
+```r
+library(rangeBuilder)
+length(unique(pt$species))
+```
+Because our point occurrence data has 698 species, we should split the data into a manageable size.
+
+```r
+f <- split(pt, pt$species)
+```
+Next, we will use the `getDynamicAlphaHull` function in the R package `rangeBuilder` to generate the alpha hulls. However, the process of generating alphahulls is quite complicated and requires some tweaking of the parameters especially because species occurrence records vary in terms of their sampling -- some species are more or less sampled than others. For species that are oversampled, it's important to thin them to speed up computational time. By contrast, species with very few records should be 'helped' by buffering and random sampling around such points. For the spatial thinning, we will first use the `geodata` package to download a elevation raster layer for the thinning. Any raster layer would work. We then use the `gridSample` function from `dismo` for the thinning.
+
+```r
+ras <- geodata::elevation_global(res=10, path="/Users/bdaru/Downloads")
+
+l <- lapply(f[1:20], function(x) {
+  sp <- unique(x$species)
+  if(nrow(x) < 5) {
+    y <- buffer(vect(x, crs = "+proj=longlat"), width = 50000)
+    y <- spatSample(y, size = 100)
+    q <- geom(y, df = TRUE)[, c("x", "y")]
+    names(q) <- c("lon", "lat")
+    q$species <- sp
+    y <- q[, c("species", "lon", "lat")]
+  } else if(nrow(x) > 2000) {
+    y <- dismo::gridSample(x[, c("lon", "lat")], r = ras)
+    y <- data.frame(species = sp, y)
+  } else {
+    y <- x
+  }
+  p <- tryCatch(getDynamicAlphaHull(y, coordHeaders = c("lon", "lat"),
+                                    clipToCoast = 'no', initialAlpha = 2),
+                error = function(e) NULL)
+  if (!is.null(p)) {
+    q <- vect(p[[1]])
+    z <- crop(q, v) |> terra::aggregate(dissolve = TRUE)
+    if(geomtype(z)=="polygons") {
+      z$binomial <- sp
+      return(z)
+    }
+  } 
+})
+out <- Filter(Negate(is.null), l)
+
+v2 <- vect(out)
+```
+Just like we did for point records, we can convert the polygon range maps to a community matrix by overlaying them onto quadrats to extract presences and absences within the quadrats. This can be achieved using the `relate` function in `terra`.
+
+```r
+j <- relate(v2, my_grids, "intersects", pairs = TRUE)
+y <- my_grids$grids[j[, 2]]
+spp <- v2$binomial[j[, 1]]
+r <- data.frame(species = spp, grids = y)
+
+y <- mylong2sparse(r)
+tmp <- data.frame(grids = row.names(y), abundance = rowSums(y), 
+                  richness = rowSums(y > 0))
+z <- merge(m, tmp, by = "grids")
+```
+
+We can write it up as a function as follows:
+```r
+mypolys2comm <- function(dat, res = 0.25, pol.grids = NULL, ...){
+  if (!is.null(pol.grids)) {
+    m <- pol.grids[, grep("grids", names(pol.grids)), drop = FALSE]
+  }
+  else {
+    m <- fishnet(mask = ext(dat), res = res)
+    crs(m) <- "+proj=longlat +datum=WGS84"
+  }
+  pj <- "+proj=longlat +datum=WGS84"
+  m <- suppressWarnings(invisible(project(m, "epsg:4326")))
+  crs(m) <- pj
+  j <- relate(dat, m, "intersects", pairs = TRUE)
+  y <- m$grids[j[, 2]]
+  spp <- dat$binomial[j[, 1]]
+  r <- data.frame(species = spp, grids = y)
+  y <- long2sparse(r)
+  tmp <- data.frame(grids = row.names(y), abundance = rowSums(y), 
+                    richness = rowSums(y > 0))
+  z <- merge(m, tmp, by = "grids")
+  return(list(comm_dat = y, map = z))
+}
+
+test3 <- mypolys2comm(dat = v2, pol.grids = my_grids)
+```  
+
+Similar to `mypoints2comm`, the output from `mypolys2comm` is also a list of two objects: `comm_dat`: (sparse) community matrix and `map`: vector or raster of grid cells with the values per cell for mapping.
+
+```r
+mp2 <- test3$map
+head(mp2)
+
+par(mfrow=c(2,1))
+plot(mp2, "richness", type="continuous")
+plot(mp2, "abundance", type="continuous")
+```
+#### EXERCISE
+Based on all the tools you have learned so far, download occurrence records for the Eucalyptus species of Australia from GBIF. Read them in, clean, and map species richness and abundances based on point records for the first 100 species across equal area grid cells of 0.5 degrees. Generate range polygons for the first 100 species and use that to generate species richness and abundance of the species. Compare your richness maps from point records against that of polygons using a simple linear regression.
+
+#### CHALLENGE
+Write a function to match the species list from point records versus that of polygons.
+
+### 3. Raster layers
+Raster layers maps are generally derived from species distribution modelling. This is an entirely broad subject and will be covered separately as its own topic.
+
