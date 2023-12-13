@@ -1,0 +1,34 @@
+---
+title: "Installs.Rmd"
+author: "April Wright"
+date: "2023-11-20"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Installs
+
+Workshop participants should have a working laptop with R installed. RStudio is strongly suggested. 
+
+You can download the whole workshop website and lessons from [here](https://github.com/darunabas/biogeography-workshop).
+
+Necessary R packages:
+
+```{r eval = FALSE, echo=TRUE}
+
+install.packages("phyloregion")
+install.packages("ape")
+install.packages("phytools") 
+install.packages("phangorn") 
+install.packages("tidyverse") 
+install.packages("devtools")
+install.packages("pkgdown")
+install.packages("knitr")
+install.packages("rmarkdown")
+
+```
+
+If you choose not to use RStudio, a text editor that can edit plain text and Markdown files is also necessary. BBEdit or TextEdit are fine. 
