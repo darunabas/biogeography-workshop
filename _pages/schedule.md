@@ -92,7 +92,7 @@ Course content is designed to be flexible to accommodate student interest and ab
 | 17:00 | Project stand-ups | Tulane River Center |
 | **Friday Dec 15, 2023** | | |
 | 06:00 | BREAKFAST | Tulane River Center |
-| 08:00 | Project Work | Tulane River Center |
+| 09:00 | Project Work | Tulane River Center |
 | 10:00 | Project Work | Tulane River Center |
 | 12:00 | LUNCH | Tulane River Center |
 | 14:00 | Presentations | Tulane River Center |
